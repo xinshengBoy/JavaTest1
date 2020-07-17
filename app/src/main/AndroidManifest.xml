@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.just.test">
+
+    <!-- 检测耳机是否插入 -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!-- 修改设置 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <!-- 读取设置 -->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <!-- 读取联系人 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <!-- 拍照权限-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <!-- 闪光灯-->
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <!-- 自动聚焦-->
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- Required  一些系统要求的权限，如访问网络等-->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <!-- 写入外部存储-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 读取外部存储-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 挂载文件系统-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <!-- 显示系统窗口-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <!--获取粗略位置-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--获取精确位置-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--访问定位额外命令-->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 改变WIFI状态 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 改变网络状态 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!--网络访问权限-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!--获取网络状态-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!--获取WIFI状态-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!--读取电话状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!--开机自动允许-->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <!--读取系统日志-->
+    <uses-permission android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+    <!--唤醒锁定（允许程序在手机屏幕关闭后后台进程仍然运行）-->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <!-- 接收手机短信的权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <!-- 读取短信 -->
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <!-- 创建桌面快捷方式权限 -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <!-- 电源管理（允许访问底层电源管理） -->
+    <uses-permission android:name="com.android.launcher.permission.DEVICE_POWER"/>
+    <!--录音-->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!--允许程序连接到已配对的蓝牙设备-->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <!--允许程序发现和配对蓝牙设备-->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!--设置壁纸-->
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+
+
+    <!--设定属性android:largeheap = "true"时， 可以申请的最大内存空间为478M，是原来的两倍多一些。-->
+    <application
+        android:name=".activity.MyApp"
+        android:allowBackup="true"
+        android:largeHeap="true"
+        android:icon="@drawable/heart"
+        android:roundIcon="@drawable/heart"
+        android:appComponentFactory=""
+        tools:replace="android:appComponentFactory"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <!--tools:replace="android:icon,android:theme"-->
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.CountDown"/>
+        <activity android:name=".activity.CustomButtonActivity"/>
+        <activity android:name=".activity.LoggerTest"/>
+        <activity android:name=".activity.WelcomPager"/>
+        <activity android:name=".activity.CheckEarPhone"/>
+        <activity android:name=".activity.CheckMusic"/>
+        <activity android:name=".activity.FragmentTabHost"/>
+        <activity android:name=".activity.SlipDelete"/>
+        <activity android:name=".activity.Encryption"/>
+        <activity android:name=".activity.JsonTest"/>
+        <activity android:name=".activity.GsonTest"/>
+        <activity android:name=".activity.SlideDeleteView"/>
+        <activity android:name=".activity.RefreshListview"/>
+        <activity android:name=".activity.SelectAll"/>
+        <activity android:name=".activity.MyNoteBook"/>
+        <activity android:name=".activity.AddNoteBook"/>
+        <activity android:name=".activity.GetPhoneMessage"/>
+        <activity android:name=".activity.CustomDialogActivity"/>
+        <activity android:name=".activity.IPhoneText"/>
+        <activity android:name=".activity.AutoText"/>
+        <activity android:name=".activity.ImageLongClickActivity"/>
+        <activity android:name=".activity.ProgressStyleActivity"/>
+        <activity android:name=".activity.TextExpand"/>
+        <activity android:name=".activity.MoveToTop"/>
+        <activity android:name=".activity.PassWordSee"/>
+        <activity android:name=".activity.VibratorActivity"/>
+        <activity android:name=".activity.AboutTextView"/>
+        <activity android:name=".activity.AirPlainModel"/>
+        <activity android:name=".activity.FileEncryPtionMain"/>
+        <activity android:name=".activity.CheckAllFile"/>
+        <activity android:name=".activity.LoveLayoutActivity"/>
+        <activity android:name=".activity.CreateLauncher"/>
+        <activity android:name=".activity.GIFActivity"/>
+        <activity android:name=".activity.GuangGao"/>
+        <activity android:name=".activity.CheckBankNumber"/>
+        <activity android:name=".activity.MoveItem"/>
+        <activity android:name=".activity.GuaGuaLe"/>
+        <activity android:name=".activity.Compass"/>
+        <activity android:name=".activity.VolleyNet"/>
+        <activity android:name=".activity.VolleyWeather"/>
+        <activity android:name=".activity.VolleyVideoList"/>
+        <activity android:name=".activity.VideoContent"/>
+        <activity
+            android:name=".activity.SwipeRefresh"
+            android:hardwareAccelerated="true" />
+        <activity android:name=".activity.XListViewTest"/>
+        <activity android:name=".activity.MPAndroidChart"/>
+        <activity android:name=".activity.HelloChartsTest"/>
+        <activity android:name=".activity.CreateOrDeleteFile"/>
+        <activity android:name=".activity.DrawLine"/>
+        <activity android:name=".activity.RingImageView"/>
+        <activity
+            android:name=".activity.MPChart2"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" />
+        <activity android:name=".activity.AutoCheckWifiState"/>
+        <activity android:name=".activity.GetPackageList"/>
+        <activity android:name=".activity.GetPhoneContactList"/>
+        <activity android:name=".activity.GetPicture"/>
+        <activity android:name=".activity.BGChangeMoving"/>
+        <activity android:name=".activity.SparkScreen"/>
+        <activity android:name=".activity.CustomKeyBroad"/>
+        <activity android:name=".activity.ScreenCut"/>
+        <activity android:name=".activity.PullWallFalls"/>
+        <activity android:name=".activity.PullWallFalls2"/>
+        <activity android:name=".activity.CheckPhoneNumberInfo"/>
+        <activity android:name=".activity.TextSpeechAndroid"/>
+        <activity android:name=".activity.ListViewRefresh"/>
+        <activity android:name=".activity.PoliceVoice"/>
+        <activity android:name=".activity.ListViewLianDong"/>
+        <activity android:name=".activity.MyCustomProgress"/>
+        <activity android:name=".activity.MoveAndTopActivity"/>
+        <activity android:name=".activity.AndroidTransitions"/>
+        <activity android:name=".activity.PicassoImage"/>
+        <activity android:name=".activity.GuideViewActivity"/>
+        <activity android:name=".activity.CustomSubmit"/>
+        <activity android:name=".activity.MiniChrome"/>
+        <activity android:name=".activity.GalleryFlowActivity"/>
+        <activity android:name=".activity.HeartRate"/>
+        <activity android:name=".activity.GuaGuaLe2"/>
+        <activity android:name=".activity.EditMenu"/>
+        <activity android:name=".activity.BlackAndWhitePhoto"/>
+        <activity android:name=".activity.GaoSiMoHu"/>
+        <activity android:name=".activity.CustomFontActivity"/>
+        <activity android:name=".activity.CommentScroller"/>
+        <activity android:name=".activity.TouMingDu"/>
+        <activity android:name=".activity.APPStartAndBufferImage"/>
+        <activity android:name=".activity.TestSharePreference"/>
+        <activity android:name=".activity.TestBaseFrame"/>
+        <activity android:name=".activity.PhoneBaseInfo"/>
+        <activity android:name=".activity.TopStopListViewActivity"/>
+        <activity android:name=".activity.ChangeStatusColume"/>
+        <activity android:name=".activity.QRCode"/>
+        <activity android:name=".activity.MyLovelyToast"/>
+        <activity android:name=".activity.MyCustomActionBar"/>
+        <activity android:name=".activity.ReadWordDOCActivity"/>
+        <activity android:name=".activity.FileInputActivity"/>
+        <activity android:name=".activity.TimeAreaSetting"/>
+        <activity android:name=".activity.SpinnerActivity"/>
+        <activity android:name=".activity.MyZoomImageView"/>
+        <activity android:name=".activity.CreateManyImageWdiget"/>
+        <activity android:name=".activity.CustomLineImage"/>
+        <activity android:name=".activity.AppFlowTotal"/>
+        <activity android:name=".activity.ScrollAndListViewAcivity"/>
+        <activity android:name=".activity.HSActivity"/>
+        <activity android:name=".activity.SqliteTestActivity"/>
+        <activity android:name=".activity.SqliteTestList"/>
+        <activity android:name=".activity.JsonTest2"/>
+        <activity android:name=".activity.ChronoterTimer"/>
+        <activity android:name=".activity.ImageSwitcherTest"/>
+        <activity android:name=".activity.MyScrollText"/>
+        <activity android:name=".activity.SpeakEnglish"/>
+        <activity android:name=".activity.RecordSpeak"/>
+        <activity android:name=".activity.MyCaculate"/>
+        <activity android:name=".activity.FlashLight"/>
+        <activity android:name=".activity.NetWorkChange"/>
+        <activity android:name=".activity.RemerberPWD"/>
+        <activity android:name=".activity.XMLPullActivity"/>
+        <activity android:name=".activity.AndroidContacts"/>
+        <activity android:name=".activity.TakeCamera"/>
+        <activity android:name=".activity.TakeCamera2"/>
+        <activity android:name=".activity.AliPayEditTextActivity"/>
+        <activity android:name=".activity.DateAndTimePicker"/>
+        <activity android:name=".activity.TouchEventSimple"/>
+        <activity android:name=".activity.HomeMoniter"/>
+        <activity android:name=".activity.LongClickSavePiture"/>
+        <activity android:name=".activity.LoudSpearker"/>
+        <activity android:name=".activity.VoiceSetting"/>
+        <activity android:name=".activity.SMSMoniter"/>
+        <activity android:name=".activity.SearchHistoryActivity"/>
+        <activity android:name=".activity.ImagePictureActivity"/>
+        <activity android:name=".activity.LittleMoveBallActivity"/>
+        <activity android:name=".activity.FrameLayoutTest"/>
+        <activity android:name=".activity.FrameLight"/>
+        <activity android:name=".activity.GridLayoutTest"/>
+        <activity android:name=".activity.TextViewAbout"/>
+        <activity android:name=".activity.TimeAbout"/>
+        <activity android:name=".activity.StackViewTest"/>
+        <activity android:name=".activity.SearchTest"/>
+        <activity android:name=".activity.PicassoTest"/>
+        <activity android:name=".activity.DrawingBoardActivity"/>
+        <activity android:name=".activity.DrawingBoardActivity2"/>
+        <activity android:name=".activity.JokeAllActivity"/>
+        <activity android:name=".activity.OpenningDialog"/>
+        <activity android:name=".activity.IntentTest"/>
+        <activity android:name=".activity.IntentTest2"/>
+        <activity android:name=".scan.android.CaptureActivity"/>
+        <activity android:name=".scan.android.PreferencesActivity"/>
+        <activity android:name=".activity.PhotoUtilActivity"/>
+        <activity android:name=".activity.GuiderPicture"/>
+        <activity android:name=".activity.UserGuideActivity"/>
+        <activity android:name=".activity.CirclePhotoActivity"/>
+        <activity android:name=".activity.TextDrawableActivity"/>
+        <activity android:name=".activity.MarqueeViewActivity"/>
+        <activity android:name=".activity.PhotoViewActivity"/>
+        <activity android:name=".activity.PhotoViewPagerActivity"/>
+        <activity android:name=".activity.RecyclerViewActivity"/>
+        <activity android:name=".activity.PicassoFace"/>
+        <activity android:name=".activity.SimpleTagImageViewActivity"/>
+        <activity android:name=".activity.SpinKitActivity"/>
+        <activity android:name=".activity.LiquidButtonActivity"/>
+        <activity android:name=".activity.MetaballLoadingActivity"/>
+        <activity android:name=".activity.StepViewActivity"/>
+        <activity android:name=".activity.WebViewCache"/>
+        <activity android:name=".activity.SpinnerLianDong"/>
+        <activity android:name=".activity.CodeViewActivity"/>
+        <activity android:name=".activity.ShowCaseViewActivity"/>
+        <activity android:name=".activity.CardStackActivity"/>
+        <activity android:name=".activity.BlurryActivity"/>
+        <activity android:name=".activity.ShapeImageActivity"/>
+        <activity android:name=".activity.SimpleToggle"/>
+        <activity android:name=".activity.BadgeViews"/>
+        <activity android:name=".activity.CircleViewActivity"/>
+        <activity android:name=".activity.WeixinVideoTest"/>
+        <activity android:name=".activity.WeixinVideoSuccess"
+            android:launchMode="singleInstance"/>
+        <activity android:name=".activity.TimeSqure"/>
+        <activity android:name=".activity.InterFaceTest"/>
+        <activity android:name=".activity.SensorTest"/>
+        <activity android:name=".activity.KeDaXunFeiTest"/>
+        <activity android:name=".activity.Gradienter"/>
+        <activity android:name=".activity.NowLocation"/>
+        <activity android:name=".activity.BackgoundView"/>
+        <activity android:name=".activity.AutoChangeLine"/>
+        <activity android:name=".activity.SimplePopWindow"/>
+        <activity android:name=".activity.SimpleSeekBar"/>
+        <activity android:name=".activity.SimpleMaterialDesign"/>
+        <activity android:name=".activity.MyScrollListview"/>
+        <activity android:name=".activity.JPushTest"/>
+        <activity android:name=".activity.KeyTextInput"/>
+        <activity android:name=".activity.StateColume"/>
+        <activity android:name=".activity.RoundImageViewActivity"/>
+        <activity android:name=".activity.AppWelComePage"/>
+        <activity android:name=".activity.EventBusTest"/>
+        <activity android:name=".activity.LottieTest"/>
+        <activity android:name=".activity.ExpandTextTest"/>
+        <activity android:name=".activity.ZaqizabaTest"/>
+        <activity android:name=".activity.FancyShowCaseTest"/>
+        <activity android:name=".activity.SwipeMenuListTest"/>
+        <activity android:name=".activity.PullToZoomListviewTest"/>
+        <activity android:name=".activity.CalendarListviewTest"/>
+        <activity android:name=".activity.WaterDropListviewTest"/>
+        <activity android:name=".activity.EWListviewTest"/>
+        <activity android:name=".activity.OpenLittleDialog"/>
+        <activity android:name=".activity.ParticleTextViewTest"/>
+        <activity android:name=".activity.PullSepareteListviewTest"/>
+        <activity android:name=".activity.WeixinSliding"/>
+        <activity android:name=".activity.AZExplosion"/>
+        <activity android:name=".activity.PercentBarTest"/>
+        <activity android:name=".activity.HeartLayoutTest"/>
+        <activity android:name=".activity.NumberSwichTest"/>
+        <activity android:name=".activity.ArrowDownButton"/>
+        <activity android:name=".activity.RippleTest"/>
+        <activity android:name=".activity.SortListTest"/>
+        <activity android:name=".activity.ConvenientBannerTest"/>
+        <activity android:name=".activity.JazzyViewPagerTest"/>
+        <activity android:name=".activity.KenburnsViewTest"/>
+        <activity android:name=".activity.ShimmerTextTest"/>
+        <activity android:name=".activity.PieChartViewTest"/>
+        <activity android:name=".activity.IOSAlert"/>
+        <activity android:name=".activity.AndroidCrop"/>
+        <!--图片裁剪androidcrop-->
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+
+        <activity android:name=".activity.SimpleBlueTooth"/>
+        <activity android:name=".activity.NoteTurnTest"/>
+        <activity android:name=".activity.CalculatePN"/>
+        <activity android:name=".activity.OkHttpDownLoadAPK"/>
+        <activity android:name=".activity.MySportScrollListview"/>
+        <activity android:name=".activity.BinarySystemTest"/>
+        <activity android:name=".activity.PopWindowTest"/>
+        <activity android:name=".activity.LitePalTest"/>
+        <activity android:name=".activity.FilmListDBTest"/>
+        <activity android:name=".activity.FilmDetailTest"/>
+        <activity android:name=".activity.RegularExpression"/>
+        <activity android:name=".activity.ImageDBTest"/>
+        <activity android:name=".activity.FilmImageDetail"/>
+        <activity android:name=".activity.StringSplitTest"/>
+        <activity android:name=".activity.EChartsTest"/>
+        <activity android:name=".activity.ViewCoordinate"/>
+        <activity android:name=".activity.TranslateLine"/>
+        <activity android:name=".activity.DrivingLibrary"/>
+        <activity android:name=".activity.HistoryToday"/>
+        <activity android:name=".activity.ProvinceArea"/>
+        <activity android:name=".activity.InternationalNews"/>
+        <activity android:name=".activity.InternationalNewsDetail"/>
+        <activity android:name=".activity.FamousPeopleSay"/>
+        <activity android:name=".activity.CheckPostOffice"/>
+        <activity android:name=".activity.AirQuality"/>
+        <activity android:name=".activity.XieHouYu"/>
+        <activity android:name=".activity.JokeAndPic"/>
+        <activity android:name=".activity.OkHttpUtilsTest"/>
+        <activity android:name=".activity.BoxOffice"/>
+        <activity android:name=".activity.NameOrigin"/>
+        <activity android:name=".activity.DistinguishErCode"/>
+        <activity android:name=".activity.SelectFile"/>
+        <activity android:name=".activity.FallViewTest"/>
+        <activity android:name=".activity.RandomColor"/>
+        <activity android:name=".activity.GoodAnswer"/>
+        <activity android:name=".activity.BreathLight"/>
+        <activity android:name=".activity.LoopRotarySwitchTest"/>
+        <activity android:name=".activity.ScratchViewTest"/>
+        <activity android:name=".activity.RulerViewTest"/>
+        <activity android:name=".activity.SnailBarTest"/>
+        <activity android:name=".activity.CatLoding"/>
+        <activity android:name=".activity.SuperLoadingTest"/>
+        <activity android:name=".activity.LyricsSync"/>
+        <activity android:name=".activity.FlyingEditText"/>
+        <activity android:name=".activity.FlycoRoundViewTest"/>
+        <activity android:name=".activity.XEditTextText"/>
+        <activity android:name=".activity.DashboardTest"/>
+        <activity android:name=".activity.TimerLine"/>
+        <activity android:name=".activity.MaterialSwitch"/>
+        <activity android:name=".activity.JelloToggleTest"/>
+        <activity android:name=".activity.AutoFinishEmail"/>
+        <activity android:name=".activity.TranslateWeb"/>
+        <activity android:name=".activity.CustomCheckBox"/>
+        <activity android:name=".activity.GridPassWordTest"/>
+        <activity android:name=".activity.MaterialIconTest"/>
+        <activity android:name=".activity.QQWelcomeVideo"/>
+        <activity android:name=".activity.SeekCircleTest"/>
+        <activity android:name=".activity.MaterialCode"/>
+        <activity android:name=".activity.VerticalSeekBar"/>
+        <activity android:name=".activity.TwoWaySeekBar"/>
+        <activity android:name=".activity.BottomDialog"/>
+        <activity android:name=".activity.RadialButtonTest"/>
+        <activity android:name=".activity.CityBusTest"/>
+        <activity android:name=".activity.TrainTicket"/>
+        <activity android:name=".activity.NunberJiXiong"/>
+        <activity android:name=".activity.TangShiSongCi"/>
+        <activity android:name=".activity.AskRobot"/>
+        <activity android:name=".activity.LongDistanceBus"/>
+        <activity android:name=".activity.OilPrice"/>
+        <activity android:name=".activity.BrokenViewTest"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity android:name=".activity.StatusBarUtilTest"/>
+        <activity android:name=".activity.PDFViewTest"/>
+        <activity android:name=".activity.FadeInTextTest"/>
+        <activity android:name=".activity.XyzInfoTest"/>
+        <activity android:name=".activity.FiftyShadesTest"/>
+        <activity android:name=".activity.ToDoListTest"/>
+        <activity android:name=".activity.Modulation"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".activity.PhotoPickerTest"/>
+        <!--引入photopicker   start-->
+        <activity android:name="com.foamtrace.photopicker.PhotoPickerActivity"
+            android:theme="@style/PhotoPickerTheme"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name="com.foamtrace.photopicker.PhotoPreviewActivity"
+            android:theme="@style/PhotoPickerTheme"/>
+        <!--引入photopicker   end-->
+        <activity android:name=".activity.IntroducePage"/>
+        <activity android:name=".activity.SimpleZxing"/>
+        <activity android:name=".activity.SmsVerifyCatcherTest"/>
+        <activity android:name=".activity.MusicSearch"/>
+        <activity android:name=".activity.VideoWallpaperTest"/>
+        <activity android:name=".activity.CardSwitchTest"/>
+        <activity android:name=".activity.CalendarTest3"/>
+        <activity android:name=".activity.FishAnimate"/>
+        <activity android:name=".activity.SettingPage"/>
+        <activity android:name=".activity.MNImageBrowserTest"/>
+        <activity android:name=".activity.MNXUtilsDBTest"/>
+        <activity android:name=".activity.MNVideoPlayerTest"/>
+        <activity android:name=".activity.CameraLightTest"/>
+        <activity android:name=".activity.BubbleSort"/>
+        <!--service-->
+        <service android:name=".service.HomeService"/>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!--极光推送接收-->
+        <receiver
+            android:name=".service.MyReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!--Required  用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!--Required  用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!--Required  用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!--Required  用户打开自定义通知栏的intent-->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" /> <!--Optional 用户接受Rich Push Javascript 回调函数的intent-->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /><!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.just.test" />
+            </intent-filter>
+        </receiver>
+
+        <!--桌面小控件-->
+        <receiver android:name=".widget.MyAppWidget">
+            <intent-filter>
+                <action android:name="action_button"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/appwidget_provider"/>
+        </receiver>
+    </application>
+
+</manifest>

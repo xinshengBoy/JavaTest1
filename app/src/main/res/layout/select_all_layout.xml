@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<!--actionbar-->
+	<LinearLayout
+		android:id="@+id/headerLayout"
+		android:layout_width="fill_parent"
+		android:layout_height="45dp"
+		android:orientation="vertical" />
+    <!-- 当前选择了多少个 -->
+    <TextView 
+        android:id="@+id/txt_num_select"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="已选中0项"
+        android:textSize="16sp"
+		android:layout_marginStart="10dp"/>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:orientation="horizontal"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp">
+	    <Button 
+	        android:id="@+id/btn_selectAll"
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:text="全选"/>
+	    <Button 
+	        android:id="@+id/btn_selectNative"
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:text="反选"/>
+	    <Button 
+	        android:id="@+id/btn_cancleAll"
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:text="全部取消"/>
+	</LinearLayout>
+	<ListView 
+	    android:id="@+id/listview_select"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"/>
+</LinearLayout>

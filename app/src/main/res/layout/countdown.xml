@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--actionbar-->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:focusable="false"
+                    android:hint="请输入验证码"/>
+
+                <Button
+                    android:id="@+id/btn_countDown"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="获取验证码" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_restart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="开始" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.just.test.widget.CircleTextProgressBar
+                        android:id="@+id/tv_default"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="跳过" />
+
+                    <com.just.test.widget.CircleTextProgressBar
+                        android:id="@+id/tv_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="跳过" />
+
+                    <com.just.test.widget.CircleTextProgressBar
+                        android:id="@+id/tv_five_narrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="窄进度条" />
+
+                    <com.just.test.widget.CircleTextProgressBar
+                        android:id="@+id/tv_red_progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="红色进度" />
+
+                    <com.just.test.widget.CircleTextProgressBar
+                        android:id="@+id/tv_red_frame"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="红色边框" />
+
+                    <com.just.test.widget.CircleTextProgressBar
+                        android:id="@+id/tv_red_circle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="红色圆" />
+
+                    <com.just.test.widget.CircleTextProgressBar
+                        android:id="@+id/tv_red_skip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="跳过" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.just.test.widget.CircleTextProgressBar
+                        android:id="@+id/tv_five_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我是五个字" />
+
+                    <com.just.test.widget.CircleTextProgressBar
+                        android:id="@+id/tv_five_wide"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="宽进度条" />
+
+                    <com.just.test.widget.CircleTextProgressBar
+                        android:id="@+id/tv_red_circle_color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="圆心点击变色"
+                        app:in_circle_color="@color/state_color" />
+
+                    <com.just.test.widget.CircleTextProgressBar
+                        android:id="@+id/tv_red_progress_text1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:text="0%"
+                        app:in_circle_color="@color/state_color" />
+
+                    <com.just.test.widget.CircleTextProgressBar
+                        android:id="@+id/tv_red_progress_text2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:text="100%"
+                        app:in_circle_color="@color/state_color" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--actionbar-->
+        <LinearLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:orientation="vertical" />
+        <Button
+            android:id="@+id/btn_userguide1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button1" />
+
+        <Button
+            android:id="@+id/btn_userguide2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button2" />
+
+        <Button
+            android:id="@+id/btn_userguide3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button3" />
+    </LinearLayout>
+    <!--
+        app:HighlightViewStyle="rect"矩形,circle圆圈,oval椭圆
+        app:maskColor 引导背景颜色
+        app:tipView 引导图片
+    -->
+    <com.zhl.userguideview.UserGuideView
+        android:id="@+id/view_userguide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:HighlightViewStyle="rect"
+        app:maskColor="@android:color/holo_blue_bright"
+        app:tipView="@drawable/mainmenu"
+        app:MaskBlurStyle="solid"/>
+</FrameLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <!--actionbar-->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical" />
+    <TextView 
+        android:id="@+id/txt_checkMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="检测手机是否正在播放音乐"
+        android:textSize="16sp"/>
+    <Button 
+        android:id="@+id/btn_checkMusic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="一键检测手机是否正在播放音乐吧"/>
+    <TextView 
+        android:id="@+id/txt_PhoneMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="手机信息："
+        android:singleLine="false"
+        android:layout_marginTop="30dp"
+        android:textSize="16sp"/>
+    <TextView 
+        android:id="@+id/txt_PhoneVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="手机版本号："
+        android:singleLine="false"
+        android:layout_marginTop="30dp"
+        android:textSize="16sp"/>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!--actionbar-->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical" />
+    <!--tag图片-->
+    <net.wujingchao.android.view.SimpleTagImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/a1"
+        app:simple_tag_textSize="20sp"
+        app:simple_tag_textColor="@android:color/white"
+        app:simple_tag_text="who"
+        app:simple_tag_background_color="#af27cdc0"
+        app:simple_tag_width="20dp"
+        app:simple_tag_enable="true"
+        app:simple_tag_round_radius="20dp"
+        app:simple_tag_orientation="left_bottom"
+        app:simple_corner_distance="30dp"/>
+    <!--
+        app:simple_tag_textSize="20sp"  tag文字大小
+        app:simple_tag_textColor="@android:color/white"  tag文字颜色
+        app:simple_tag_text="who"  tag要显示的文字
+        app:simple_tag_background_color="#af27cdc0"  tag的背景颜色
+        app:simple_tag_width="20dp"  tag的长度（宽度）
+        app:simple_tag_enable="true" tag是否可点击
+        app:simple_tag_round_radius="20dp"  tag的圆角度
+        app:simple_tag_orientation="right_top"  tag所显示的方向
+        app:simple_corner_distance="30dp"  tag的距离图片角度的距离
+    -->
+</LinearLayout>

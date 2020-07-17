@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--actionbar-->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <com.lqr.videorecordview.LQRVideoRecordView
+                android:id="@+id/weixinvideos"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="50dp"
+                app:vrv_out_format="of_mp4"
+                app:vrv_record_max_time="10"
+                app:vrv_video_encoding_bit_rate="1048576"
+                app:vrv_video_frame_rate="10"
+                app:vrv_x_px="320"
+                app:vrv_y_px="240" />
+
+            <TextView
+                android:id="@+id/txt_weixin_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:background="#99cccccc"
+                android:padding="3dp"
+                android:text="上滑取消"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <com.just.test.custom.RecordProgress
+                android:id="@+id/record_progress"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+            <Button
+                android:id="@+id/btn_startVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@null"
+                android:text="按住拍"
+                android:textColor="#1AAD19"
+                android:textSize="18sp"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

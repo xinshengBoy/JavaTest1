@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <!--actionbar-->
+        <LinearLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:orientation="vertical" />
+        <!-- 下划线示例1 -->
+
+        <TextView
+            android:id="@+id/txt_textview_underline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp" />
+        <!-- 下划线示例2 -->
+
+        <TextView
+            android:id="@+id/txt_textview_underline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp" />
+        <!-- 中划线示例和删除线示例 -->
+
+        <TextView
+            android:id="@+id/txt_textview_centureline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp" />
+        <!-- 粗体 -->
+
+        <TextView
+            android:id="@+id/txt_textview_fake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp" />
+        <!-- 斜体 -->
+
+        <TextView
+            android:id="@+id/txt_textview_italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+        <!-- 滚动 -->
+
+        <TextView
+            android:id="@+id/txt_textview_runline"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textSize="18sp" />
+
+        <!--
+    跑马灯显示 
+    android:ellipsize="marquee"
+    	获得焦点
+    	android:focusable="true"-->
+        <!-- 自下而上的滚动1 -->
+
+        <com.just.test.tools.VerticalScrollTextView
+            android:id="@+id/txt_verticalScrollTextview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@android:color/holo_green_dark" />
+        <!-- 自下而上的滚动2 -->
+
+        <TextView
+            android:id="@+id/txt_textview_downToUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxLines="5"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:textSize="18sp" />
+        <!-- 自下而上3 -->
+
+        <com.just.test.tools.VerticalScrollTextView2
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:text="好雨知时节,当春乃发生.随风潜入夜,润物细无声.野径云俱黑,江船火独明.晓看红湿处,花重锦官城."
+            android:layout_gravity="center_horizontal"/>
+
+        <!--OutlineTextView-->
+        <com.just.test.custom.OutlineTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你好!"
+            android:textColor="@color/colorAccent"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:ot_strokeColor="#fff"
+            app:ot_strokeJoinStyle="miter"
+            app:ot_strokeWidth="0.5dp" />
+
+        <com.just.test.custom.OutlineTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我好!"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:ot_strokeColor="#fff"
+            app:ot_strokeJoinStyle="miter"
+            app:ot_strokeWidth="0.5dp"
+            app:ot_outerShadowColor="@color/colorAccent"
+            app:ot_outerShadowDy="3dp"
+            app:ot_outerShadowRadius="5dp"
+            />
+
+        <com.just.test.custom.OutlineTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="大家好!"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:ot_strokeColor="@android:color/white"
+            app:ot_strokeJoinStyle="miter"
+            app:ot_strokeWidth="0.5dp"
+            app:ot_innerShadowColor="@color/colorAccent"
+            app:ot_innerShadowDx="1dp"
+            app:ot_innerShadowRadius="0.5dp"
+            />
+
+        <com.just.test.custom.OutlineTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="大家好才是真的好----广州好迪!"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:ot_innerShadowDy="2dp"
+            app:ot_innerShadowColor="@android:color/black"
+            app:ot_innerShadowRadius="1dp"
+            app:ot_outerShadowDy="3dp"
+            app:ot_outerShadowColor="@color/colorPrimaryDark"
+            app:ot_outerShadowRadius="10dp"
+            app:ot_strokeColor="@color/colorAccent"
+            app:ot_strokeJoinStyle="miter"
+            app:ot_strokeWidth="5dp"
+            />
+    </LinearLayout>
+
+</ScrollView>

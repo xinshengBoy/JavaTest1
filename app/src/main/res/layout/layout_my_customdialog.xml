@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_mycustomdialog">
+    
+        <!-- 内容 -->
+        <RelativeLayout 
+            android:id="@+id/layout_topmessage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/layout_anniu">
+            <TextView 
+                android:id="@+id/txt_mycustomdialog_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="120dp"
+                android:padding="15dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+        
+        <View  
+	        android:layout_width="match_parent"  
+	        android:layout_height="1dp"  
+	        android:background="@color/grey"  
+	        android:layout_below="@+id/layout_topmessage"/>  
+        
+        
+        <!-- 按钮 -->
+        <RelativeLayout 
+            android:id="@+id/layout_anniu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <Button 
+                android:id="@+id/btn_mycustomdialog_cancle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="@color/orange"
+                android:gravity="center"
+                android:background="@null"
+                android:layout_margin="10dp"/>
+            <View 
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/grey"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="1dp"/>
+            <Button 
+                android:id="@+id/btn_mycustomdialog_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="@color/orange"
+                android:gravity="center"
+                android:background="@null"
+                android:layout_margin="10dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+</RelativeLayout>

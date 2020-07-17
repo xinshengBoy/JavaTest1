@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--actionbar-->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/et_fadeInText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:textSize="20sp"
+            android:textColor="@color/green"
+            android:hint="请输入文字"
+            android:textColorHint="@color/gray"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_filmdetail_edit"/>
+        <Button
+            android:id="@+id/btn_startFadeInText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="开始"
+            android:background="@drawable/bg_filmdetail_edit"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+    <com.just.test.custom.FadeInTextView
+        android:id="@+id/view_fadeInText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        android:layout_margin="5dp"/>
+</LinearLayout>

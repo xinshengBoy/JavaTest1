@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <!--actionbar-->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical" />
+    <com.just.test.custom.PopVerticalSeekbarView
+        android:id="@+id/seekBar_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:pop_button_drawable="@drawable/ic_tabbar_found_normal"
+        app:pop_push_drawable="@drawable/ic_tabbar_found_pressed"
+        app:pop_line_width="20"
+        app:pop_bg_color="@color/gray"
+        app:pop_bar_color="@color/green"
+        app:pop_text_color="@color/black"
+        app:pop_text_size="16"
+        app:pop_bar_min="0"
+        app:pop_bar_max="100"
+        app:pop_bar_current="50"/>
+    <TextView
+        android:id="@+id/txt_vertical_seekbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/red"/>
+</LinearLayout>

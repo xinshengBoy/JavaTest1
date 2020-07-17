@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--actionbar-->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical" />
+
+    <Spinner
+        android:id="@+id/spinner_test1"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_filmdetail_edit"
+        android:drawSelectorOnTop="false"
+        android:layout_gravity="center"/>
+
+    <Spinner
+        android:id="@+id/spinner_test2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_filmdetail_edit"
+        android:drawSelectorOnTop="false"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/btn_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/bg_filmdetail_edit"
+        android:text="确定"
+        android:textColor="@color/black"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/txt_spinner_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="26sp" />
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_list_card_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:stackHeaderHeight="300dp">
+
+    <FrameLayout
+        android:id="@+id/frame_cardstack_item"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/cardstack_bg">
+        <TextView
+            android:id="@+id/txt_cardview_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textSize="40sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+    </FrameLayout>
+    <ScrollView
+        android:id="@+id/container_list_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="60dp"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:animateLayoutChanges="true">
+        <TextView
+            android:id="@+id/txt_cardview_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="就是“探探”app实现的那种交互体验，为此我还特意下了一个探探体验了一下，卡片上展示的全是美女！左右拖动操作页非常nice，探探这个产品交互简直无可挑剔。"/>
+    </ScrollView>
+</LinearLayout>

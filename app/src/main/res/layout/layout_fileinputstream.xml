@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--actionbar-->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 文件流的读写 -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="文件流的读写" />
+
+            <EditText
+                android:id="@+id/et_fileinputstream"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:hint="请输入要保存的内容" />
+
+            <Button
+                android:id="@+id/btn_fileinputstream_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="保存" />
+
+            <Button
+                android:id="@+id/btn_fileinputstream_read"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="读取" />
+
+            <TextView
+                android:id="@+id/txt_fileinputstream_read"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <!-- 资源文件raw的读写 -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="读取raw" />
+
+            <Button
+                android:id="@+id/btn_fileinputstream_read_raw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="读取" />
+
+            <TextView
+                android:id="@+id/txt_fileinputstream_read_raw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <!-- 资源文件asset的读写 -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="读取asset" />
+
+            <Button
+                android:id="@+id/btn_fileinputstream_read_asset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="读取" />
+
+            <TextView
+                android:id="@+id/txt_fileinputstream_read_asset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <!-- sdcard文件的读写 -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="sdcard的读写" />
+
+            <EditText
+                android:id="@+id/et_fileinputstream_sdcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:hint="请输入要保存的内容" />
+
+            <Button
+                android:id="@+id/btn_fileinputstream_save_sdcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="保存" />
+
+            <Button
+                android:id="@+id/btn_fileinputstream_read_sdcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="读取" />
+
+            <TextView
+                android:id="@+id/txt_fileinputstream_read_sdcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

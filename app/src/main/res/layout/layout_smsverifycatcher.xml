@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--actionbar-->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical" />
+    <EditText
+        android:id="@+id/et_smsverify"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="请输入短信验证码"
+        android:background="@drawable/bg_filmdetail_edit"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_margin="5dp"/>
+    <Button
+        android:id="@+id/btn_smsverify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_filmdetail_edit"
+        android:text="获取验证码"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_margin="5dp"/>
+</LinearLayout>

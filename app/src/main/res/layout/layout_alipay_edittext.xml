@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--actionbar-->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical" />
+
+    <com.just.test.widget.AliPayPassWordView
+        android:id="@+id/et_aliPay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:cursorVisible="false"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:enabled="true"
+        android:clickable="true"/>
+    <Button
+        android:id="@+id/btn_aliPay_reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="重置密码"/>
+</LinearLayout>

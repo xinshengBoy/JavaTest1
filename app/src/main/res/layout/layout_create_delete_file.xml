@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <Button 
+        android:id="@+id/btn_createFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="新建文件夹及文件并写入数据"
+        android:textSize="18sp"/>
+	<Button 
+        android:id="@+id/btn_deleteFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="删除文件夹及文件并删除数据"
+        android:textSize="18sp"/>
+</LinearLayout>

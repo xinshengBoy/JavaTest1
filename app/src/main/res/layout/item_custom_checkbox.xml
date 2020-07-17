@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_margin="10dp">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/wechat_icon"/>
+    <TextView
+        android:id="@+id/txt_item_customCheckbox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_gravity="center_vertical"/>
+    <com.just.test.custom.AnimateCheckBox
+        android:id="@+id/cb_item_checkBox"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        app:animDurations="200"
+        app:checkedColor="@color/red"
+        app:lineColor="@color/white"
+        app:lineWidth="1dp"
+        android:layout_gravity="center_vertical"/>
+    <!--checkedColor  选中后的颜色  lineColor  选中后里面正确号的颜色-->
+</LinearLayout>

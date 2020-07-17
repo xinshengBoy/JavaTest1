@@ -1,0 +1,1906 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_countDown"
+                style="@style/baseRes"
+                android:text="倒计时+圆形进度条" />
+
+            <Button
+                android:id="@+id/btn_customButton"
+                style="@style/baseRes"
+                android:text="自定义按钮" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_timeArea"
+                style="@style/baseRes"
+                android:text="时区设置" />
+
+            <Button
+                android:id="@+id/btn_testLog"
+                style="@style/baseRes"
+                android:text="log测试" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_FileInputStream"
+                style="@style/baseRes"
+                android:text="流文件的存储与读取" />
+
+            <Button
+                android:id="@+id/btn_welcomViewPager"
+                style="@style/baseRes"
+                android:text="欢迎界面" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_earPhone"
+                style="@style/baseRes"
+                android:text="检测耳机" />
+
+            <Button
+                android:id="@+id/btn_CheackMusic"
+                style="@style/baseRes"
+                android:text="检测是否正在播放音乐" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_readWordDOC"
+                style="@style/baseRes"
+                android:text="读取word文档" />
+
+            <Button
+                android:id="@+id/btn_AppFragmentHost"
+                style="@style/baseRes"
+                android:text="底部菜单框架" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_slipDelete"
+                style="@style/baseRes"
+                android:text="滑动删除" />
+
+            <Button
+                android:id="@+id/btn_encryption"
+                style="@style/baseRes"
+                android:text="简单加解密" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_jsonArrayTest"
+                style="@style/baseRes"
+                android:text="json数组解析" />
+
+            <Button
+                android:id="@+id/btn_GsonTest"
+                style="@style/baseRes"
+                android:text="gson解析" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_appFlowTotal"
+                style="@style/baseRes"
+                android:text="本程序的流量统计" />
+
+            <Button
+                android:id="@+id/btn_slideDelete"
+                style="@style/baseRes"
+                android:text="侧滑删除" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_PullToRefreshListview"
+                style="@style/baseRes"
+                android:text="上拉下拉刷新" />
+
+            <Button
+                android:id="@+id/btn_scrollview_listview"
+                style="@style/baseRes"
+                android:text="scrollview嵌套listview" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_AllSelect"
+                style="@style/baseRes"
+                android:text="全选" />
+
+            <Button
+                android:id="@+id/btn_noteBook"
+                style="@style/baseRes"
+                android:text="简易记事本" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_GetPhoneInfo"
+                style="@style/baseRes"
+                android:text="获取手机信息及联系人方法" />
+
+            <Button
+                android:id="@+id/btn_customDialog"
+                style="@style/baseRes"
+                android:text="自定义对话框" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_IPhoneTextStyle"
+                style="@style/baseRes"
+                android:text="IPhone手机解锁文字样式" />
+
+            <Button
+                android:id="@+id/btn_autoText"
+                style="@style/baseRes"
+                android:text="自动提示" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_longClickImage"
+                style="@style/baseRes"
+                android:text="图片长按事件" />
+
+            <Button
+                android:id="@+id/btn_progressStyle"
+                style="@style/baseRes"
+                android:text="进度条样式" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_textExpand"
+                style="@style/baseRes"
+                android:text="文字展开收起" />
+
+            <Button
+                android:id="@+id/btn_moveToTop"
+                style="@style/baseRes"
+                android:text="置顶" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_passwordSee"
+                style="@style/baseRes"
+                android:text="密码可见或隐藏" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_vibrator"
+                style="@style/baseRes"
+                android:text="震动" />
+
+            <Button
+                android:id="@+id/btn_aboutTextview"
+                style="@style/baseRes"
+                android:text="textview相关" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_airPlainModel"
+                style="@style/baseRes"
+                android:text="飞行模式" />
+
+            <Button
+                android:id="@+id/btn_FileSafe"
+                style="@style/baseRes"
+                android:text="代码安全相关" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_loveLayout"
+                style="@style/baseRes"
+                android:text="love动画效果" />
+
+            <Button
+                android:id="@+id/btn_createLauncher"
+                style="@style/baseRes"
+                android:text="创建桌面快捷方式" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_GIFAnimation"
+                style="@style/baseRes"
+                android:text="GIF动画" />
+
+            <Button
+                android:id="@+id/btn_guanggao"
+                style="@style/baseRes"
+                android:text="广告展示栏效果" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_isBanlNumber"
+                style="@style/baseRes"
+                android:text="判断银行卡号" />
+
+            <Button
+                android:id="@+id/btn_moveItem"
+                style="@style/baseRes"
+                android:text="listview拖动交换顺序" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_Guaguale"
+                style="@style/baseRes"
+                android:text="刮刮乐" />
+
+            <Button
+                android:id="@+id/btn_guaguale"
+                style="@style/baseRes"
+                android:text="刮刮乐2" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_Volley"
+                style="@style/baseRes"
+                android:text="Volley网络请求" />
+
+            <Button
+                android:id="@+id/btn_VolleyWeather"
+                style="@style/baseRes"
+                android:text="Volley天气请求" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_VolleyVidioList"
+                style="@style/baseRes"
+                android:text="Volley视频列表" />
+
+            <Button
+                android:id="@+id/btn_swipeRefresh"
+                style="@style/baseRes"
+                android:text="google刷新" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_xListview"
+                style="@style/baseRes"
+                android:text="xListview" />
+
+            <Button
+                android:id="@+id/btn_MPAndroidChart"
+                style="@style/baseRes"
+                android:text="MPAndroidChart图表" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_helloChart2"
+                style="@style/baseRes"
+                android:text="折线图" />
+
+            <Button
+                android:id="@+id/btn_createOrDeleteFile"
+                style="@style/baseRes"
+                android:text="新建或删除文件夹" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_drawLine"
+                style="@style/baseRes"
+                android:text="折线图2" />
+
+            <Button
+                android:id="@+id/btn_ringImage"
+                style="@style/baseRes"
+                android:text="圆角图片" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_MPChart2"
+                style="@style/baseRes"
+                android:text="折线图2" />
+
+            <Button
+                android:id="@+id/btn_checkWiFiState"
+                style="@style/baseRes"
+                android:text="每分钟自动检测WIFI状态" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_GetPackageList"
+                style="@style/baseRes"
+                android:text="获取应用列表" />
+
+            <Button
+                android:id="@+id/btn_GetPhoneContactList"
+                style="@style/baseRes"
+                android:text="获取手机联系人" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_GetPicture"
+                style="@style/baseRes"
+                android:text="gridview图片" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_BGChange"
+                style="@style/baseRes"
+                android:text="摇一摇更换主题" />
+
+            <Button
+                android:id="@+id/btn_sparkScreen"
+                style="@style/baseRes"
+                android:text="火花效果" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_customKeyBroad"
+                style="@style/baseRes"
+                android:text="自定义键盘" />
+
+            <Button
+                android:id="@+id/btn_screenCut"
+                style="@style/baseRes"
+                android:text="一键截屏" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_pullWallFalls"
+                style="@style/baseRes"
+                android:text="瀑布流" />
+
+            <Button
+                android:id="@+id/btn_pullWallFalls2"
+                style="@style/baseRes"
+                android:text="瀑布流2" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_textSpeech"
+                style="@style/baseRes"
+                android:text="安卓自带文本朗读" />
+
+            <Button
+                android:id="@+id/btn_listviewRefresh"
+                style="@style/baseRes"
+                android:text="listview上拉加载更多" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_policeVoice"
+                style="@style/baseRes"
+                android:text="警车音效" />
+
+            <Button
+                android:id="@+id/btn_listLiandong"
+                style="@style/baseRes"
+                android:text="list二级联动" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_customProgress"
+                style="@style/baseRes"
+                android:text="自定义进度条" />
+
+            <Button
+                android:id="@+id/btn_MoveAndTop"
+                style="@style/baseRes"
+                android:text="拖动和置顶" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_AndroidTransitions"
+                style="@style/baseRes"
+                android:text="旋转动画" />
+
+            <Button
+                android:id="@+id/btn_picasso"
+                style="@style/baseRes"
+                android:text="picasso获取图片" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_GuideView"
+                style="@style/baseRes"
+                android:text="透明引导图" />
+
+            <Button
+                android:id="@+id/btn_customSubmit"
+                style="@style/baseRes"
+                android:text="自定义提交按钮" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_MiniChrome"
+                style="@style/baseRes"
+                android:text="迷你浏览器" />
+
+            <Button
+                android:id="@+id/btn_galleryflow"
+                style="@style/baseRes"
+                android:text="gallery" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_heartrate"
+                style="@style/baseRes"
+                android:text="心率监测" />
+
+            <Button
+                android:id="@+id/btn_checkPhoneNumberInfo"
+                style="@style/baseRes"
+                android:text="查询手机号码归属地" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_compass"
+                style="@style/baseRes"
+                android:text="指南针" />
+
+            <Button
+                android:id="@+id/btn_customCircleProgressBar"
+                style="@style/baseRes"
+                android:text="自定义圆形进度条" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_editMenu"
+                style="@style/baseRes"
+                android:text="菜单编辑" />
+
+            <Button
+                android:id="@+id/btn_blackAndWhitePhoto"
+                style="@style/baseRes"
+                android:text="黑白照片" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_FastBlur"
+                style="@style/baseRes"
+                android:text="高斯模糊" />
+
+            <Button
+                android:id="@+id/btn_sensorManager"
+                style="@style/baseRes"
+                android:text="传感器" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_customFont"
+                style="@style/baseRes"
+                android:text="第三方字体" />
+
+            <Button
+                android:id="@+id/btn_commentScroller"
+                style="@style/baseRes"
+                android:text="评论滚动" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_TouMingDu"
+                style="@style/baseRes"
+                android:text="透明度" />
+
+            <Button
+                android:id="@+id/btn_APPStartAndBufferImage"
+                style="@style/baseRes"
+                android:text="APP启动缓冲画面" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_getSharedPreferences"
+                style="@style/baseRes"
+                android:text="共享首选项" />
+
+            <Button
+                android:id="@+id/btn_baseFrame"
+                style="@style/baseRes"
+                android:text="TabWight+ViewPager" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_getPhoneBaseInfo"
+                style="@style/baseRes"
+                android:text="手机基本信息" />
+
+            <Button
+                android:id="@+id/btn_topStop"
+                style="@style/baseRes"
+                android:text="头部悬停" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_changeStatusColume"
+                style="@style/baseRes"
+                android:text="状态栏沉浸" />
+
+            <Button
+                android:id="@+id/btn_qrcode"
+                style="@style/baseRes"
+                android:text="二维码的生成与解析" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_myLovelyToast"
+                style="@style/baseRes"
+                android:text="自定义toast" />
+
+            <Button
+                android:id="@+id/btn_customActionbar"
+                style="@style/baseRes"
+                android:text="自定义标题头" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_spinner"
+                style="@style/baseRes"
+                android:text="spinner下拉框" />
+
+            <Button
+                android:id="@+id/btn_ZoomImageView"
+                style="@style/baseRes"
+                android:text="图片放大与缩小" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_createImageWdiget"
+                style="@style/baseRes"
+                android:text="动态生成多个图片控件" />
+
+            <Button
+                android:id="@+id/btn_customLineImage"
+                style="@style/baseRes"
+                android:text="自定义折线图" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_HorizontalScrollView"
+                style="@style/baseRes"
+                android:text="Galley效果（HorizontalScrollView）" />
+
+            <Button
+                android:id="@+id/btn_sqliteTest"
+                style="@style/baseRes"
+                android:text="sqlite数据库" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_jsonTest2"
+                style="@style/baseRes"
+                android:text="JSON解析2" />
+
+            <Button
+                android:id="@+id/btn_chronometer"
+                style="@style/baseRes"
+                android:text="chronometer计时器" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_imageSwitcher"
+                style="@style/baseRes"
+                android:text="imageSwitcher" />
+
+            <Button
+                android:id="@+id/btn_scrollText"
+                style="@style/baseRes"
+                android:text="可滑动的文字" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_speakEnglish"
+                style="@style/baseRes"
+                android:text="朗读" />
+
+            <Button
+                android:id="@+id/btn_recordSpeak"
+                style="@style/baseRes"
+                android:text="录音" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_caculate"
+                style="@style/baseRes"
+                android:text="计算器" />
+
+            <Button
+                android:id="@+id/btn_flashlight"
+                style="@style/baseRes"
+                android:text="手电筒" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_wifiAnd3G"
+                style="@style/baseRes"
+                android:text="网络变化" />
+
+            <Button
+                android:id="@+id/btn_remerberPwd"
+                style="@style/baseRes"
+                android:text="记住密码" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_xmlpull"
+                style="@style/baseRes"
+                android:text="XML解析" />
+
+            <Button
+                android:id="@+id/btn_androidContacts"
+                style="@style/baseRes"
+                android:text="手机联系人" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_takeCamera"
+                style="@style/baseRes"
+                android:text="拍照及相册" />
+
+            <Button
+                android:id="@+id/btn_takeCamera2"
+                style="@style/baseRes"
+                android:text="拍照2" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_aliPayEditText"
+                style="@style/baseRes"
+                android:text="支付宝密码" />
+
+            <Button
+                android:id="@+id/btn_DateAndTimePicker"
+                style="@style/baseRes"
+                android:text="时间日期选择" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_touchEventSimple"
+                style="@style/baseRes"
+                android:text="滑动监听" />
+
+            <Button
+                android:id="@+id/btn_homeMoniter"
+                style="@style/baseRes"
+                android:text="HOME监听" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_LongClickSavePiture"
+                style="@style/baseRes"
+                android:text="长按保存图片" />
+
+            <Button
+                android:id="@+id/btn_loudSpearker"
+                style="@style/baseRes"
+                android:text="扬声器" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_voiceSetting"
+                style="@style/baseRes"
+                android:text="音量设置" />
+
+            <Button
+                android:id="@+id/btn_smsMoniterBroadcastReceiver"
+                style="@style/baseRes"
+                android:text="短信监听" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_searchHistory"
+                style="@style/baseRes"
+                android:text="搜索历史" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_imagePicture"
+                style="@style/baseRes"
+                android:text="图片浏览器" />
+
+            <Button
+                android:id="@+id/btn_littleMoveBall"
+                style="@style/baseRes"
+                android:text="小鼠标" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_FrameLayoutTest"
+                style="@style/baseRes"
+                android:text="帧布局" />
+
+            <Button
+                android:id="@+id/btn_frameLight"
+                style="@style/baseRes"
+                android:text="霓虹灯" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_gridLayoutTest"
+                style="@style/baseRes"
+                android:text="网格布局" />
+
+            <Button
+                android:id="@+id/btn_textviewAbout"
+                style="@style/baseRes"
+                android:text="文字相关" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_timeAbout"
+                style="@style/baseRes"
+                android:text="时间相关" />
+
+            <Button
+                android:id="@+id/btn_stackviewTest"
+                style="@style/baseRes"
+                android:text="折叠图片" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_searchTest"
+                style="@style/baseRes"
+                android:text="系统搜索框" />
+
+            <Button
+                android:id="@+id/btn_picassoTest"
+                style="@style/baseRes"
+                android:text="picasso测试" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_drawingBoard"
+                style="@style/baseRes"
+                android:text="画板" />
+
+            <Button
+                android:id="@+id/btn_drawingBoard2"
+                style="@style/baseRes"
+                android:text="画板2" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_jokeAll"
+                style="@style/baseRes"
+                android:text="笑话大全" />
+
+            <Button
+                android:id="@+id/btn_openningDialog"
+                style="@style/baseRes"
+                android:text="开源对话框" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_IntentTest"
+                style="@style/baseRes"
+                android:text="Intent传值" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_MNXUtilsDB"
+                style="@style/baseRes"
+                android:text="xutils数据库" />
+
+            <Button
+                android:id="@+id/btn_PhotoUtils"
+                style="@style/baseRes"
+                android:text="快速打开相册" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_guiderPicture"
+                style="@style/baseRes"
+                android:text="透明引导图" />
+
+            <Button
+                android:id="@+id/btn_UserGuide"
+                style="@style/baseRes"
+                android:text="透明引导图2" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_CircleImageView"
+                style="@style/baseRes"
+                android:text="圆形头像" />
+
+            <Button
+                android:id="@+id/btn_TextDrawable"
+                style="@style/baseRes"
+                android:text="文字头像" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_MarqueeView"
+                style="@style/baseRes"
+                android:text="垂直翻页公告" />
+
+            <Button
+                android:id="@+id/btn_SpinKit"
+                style="@style/baseRes"
+                android:text="加载进度条样式" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_PhotoView"
+                style="@style/baseRes"
+                android:text="图片放大缩小" />
+
+            <Button
+                android:id="@+id/btn_PhotoViewPager"
+                style="@style/baseRes"
+                android:text="photo图片翻页" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_RecyclerViewTest"
+                style="@style/baseRes"
+                android:text="RecyclerView" />
+
+            <Button
+                android:id="@+id/btn_PicassoFace"
+                style="@style/baseRes"
+                android:text="picasso面部裁剪" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_compressor"
+                style="@style/baseRes"
+                android:text="compressor图片压缩" />
+
+            <Button
+                android:id="@+id/btn_SimpleTagImageView"
+                style="@style/baseRes"
+                android:text="标签图片" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_MetaballLoading"
+                style="@style/baseRes"
+                android:text="贝塞尔曲线动画" />
+
+            <Button
+                android:id="@+id/btn_LiquidButton"
+                style="@style/baseRes"
+                android:text="液体动态加载" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_cameraLight"
+                style="@style/baseRes"
+                android:text="闪光灯测试" />
+
+            <Button
+                android:id="@+id/btn_StepView"
+                style="@style/baseRes"
+                android:text="指示器" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_ShowcaseView"
+                style="@style/baseRes"
+                android:text="引导页2" />
+
+            <Button
+                android:id="@+id/btn_WebViewCache"
+                style="@style/baseRes"
+                android:text="网页缓存" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_liandong2"
+                style="@style/baseRes"
+                android:text="Spinner联动2" />
+
+            <Button
+                android:id="@+id/btn_CodeView"
+                style="@style/baseRes"
+                android:text="代码加载器" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_CardStackView"
+                style="@style/baseRes"
+                android:text="卡片交互" />
+
+            <Button
+                android:id="@+id/btn_Blurry"
+                style="@style/baseRes"
+                android:text="图片模糊库" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_shapeImageView"
+                style="@style/baseRes"
+                android:text="定制各种图片形状" />
+
+            <Button
+                android:id="@+id/btn_simpleToggle"
+                style="@style/baseRes"
+                android:text="状态框" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_badgeview"
+                style="@style/baseRes"
+                android:text="QQ未读消息数量" />
+
+            <Button
+                android:id="@+id/btn_mnvideoplayer"
+                style="@style/baseRes"
+                android:text="开源视频框架" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_circyleView"
+                style="@style/baseRes"
+                android:text="圆形图" />
+
+            <Button
+                android:id="@+id/btn_weixinvideo"
+                style="@style/baseRes"
+                android:text="微信小视频" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_timeSqure"
+                style="@style/baseRes"
+                android:text="日历控件" />
+
+            <Button
+                android:id="@+id/btn_interfaceTest"
+                style="@style/baseRes"
+                android:text="接口测试" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_kedaxunfei"
+                style="@style/baseRes"
+                android:text="讯飞语音" />
+
+            <Button
+                android:id="@+id/btn_gradienter"
+                style="@style/baseRes"
+                android:text="水平仪" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_NoewLocation"
+                style="@style/baseRes"
+                android:text="实时位置" />
+
+            <Button
+                android:id="@+id/btn_backgroundView"
+                style="@style/baseRes"
+                android:text="色谱" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_StaticLayout"
+                style="@style/baseRes"
+                android:text="文字自动换行" />
+
+            <Button
+                android:id="@+id/btn_paletteimageview"
+                style="@style/baseRes"
+                android:text="图片阴影" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_simplePop"
+                style="@style/baseRes"
+                android:text="pop弹框" />
+
+            <Button
+                android:id="@+id/btn_DiscreteSeekBar"
+                style="@style/baseRes"
+                android:text="滑动条百分比" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_MaterialDesign"
+                style="@style/baseRes"
+                android:text="5.0新设计" />
+
+            <Button
+                android:id="@+id/btn_scrollListview"
+                style="@style/baseRes"
+                android:text="列表横向滑动" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_KeyTextInputInOut"
+                style="@style/baseRes"
+                android:text="关键词飞入飞出" />
+
+            <Button
+                android:id="@+id/btn_stateColume"
+                style="@style/baseRes"
+                android:text="状态栏沉浸" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_bubble_sort"
+                style="@style/baseRes"
+                android:text="冒泡排序" />
+
+            <Button
+                android:id="@+id/btn_roundImageView"
+                style="@style/baseRes"
+                android:text="圆形图片" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_AppWelComePage"
+                style="@style/baseRes"
+                android:text="欢迎页面" />
+
+            <Button
+                android:id="@+id/btn_eventBus"
+                style="@style/baseRes"
+                android:text="eventBus测试" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_lottie"
+                style="@style/baseRes"
+                android:text="lottie动画" />
+
+            <Button
+                android:id="@+id/btn_ExpandTextView"
+                style="@style/baseRes"
+                android:text="文字展开收起" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_zaqizaba"
+                style="@style/baseRes"
+                android:text="杂七杂八" />
+
+            <Button
+                android:id="@+id/btn_FancyShowCaseView"
+                style="@style/baseRes"
+                android:text="控件引导框" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_swipemenulistview"
+                style="@style/baseRes"
+                android:text="侧滑删除" />
+
+            <Button
+                android:id="@+id/btn_PullToZoomListView"
+                style="@style/baseRes"
+                android:text="顶部图片列表" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_CalendarListview"
+                style="@style/baseRes"
+                android:text="日历列表" />
+
+            <Button
+                android:id="@+id/btn_waterDropListView"
+                style="@style/baseRes"
+                android:text="水滴列表" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_EWListView"
+                style="@style/baseRes"
+                android:text="定位单词的列表" />
+
+            <Button
+                android:id="@+id/btn_openLittleDialog"
+                style="@style/baseRes"
+                android:text="轻量级开源提示框" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_ParticleTextView"
+                style="@style/baseRes"
+                android:text="粒子动画文字" />
+
+            <Button
+                android:id="@+id/btn_pullSepareteListview"
+                style="@style/baseRes"
+                android:text="列表item拉伸" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_SlidingWeixinLayout"
+                style="@style/baseRes"
+                android:text="仿微信网页下拉" />
+
+            <Button
+                android:id="@+id/btn_AZExplosion"
+                style="@style/baseRes"
+                android:text="粒子爆破效果" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_PercentageBar"
+                style="@style/baseRes"
+                android:text="自定义百分比进度条" />
+
+            <Button
+                android:id="@+id/btn_heartLayout"
+                style="@style/baseRes"
+                android:text="心形泡泡" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_numberSwichView"
+                style="@style/baseRes"
+                android:text="炫酷的计时器" />
+
+            <Button
+                android:id="@+id/btn_ArrowDownloadButton"
+                style="@style/baseRes"
+                android:text="下载按钮进度条" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_Ripple"
+                style="@style/baseRes"
+                android:text="波浪效果" />
+
+            <Button
+                android:id="@+id/btn_sortListView"
+                style="@style/baseRes"
+                android:text="列表字母排序" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_ConvenientBanner"
+                style="@style/baseRes"
+                android:text="广告栏" />
+
+            <Button
+                android:id="@+id/btn_jazzViewPager"
+                style="@style/baseRes"
+                android:text="ViewPager效果" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_kenburnsview"
+                style="@style/baseRes"
+                android:text="会动的图片" />
+
+            <Button
+                android:id="@+id/btn_shimmerTextview"
+                style="@style/baseRes"
+                android:text="淡淡发光的文字" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_pieChartView"
+                style="@style/baseRes"
+                android:text="自定义饼状图" />
+
+            <Button
+                android:id="@+id/btn_IOSAlert"
+                style="@style/baseRes"
+                android:text="IOS提示框" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_androidCrop"
+                style="@style/baseRes"
+                android:text="图片裁剪" />
+
+            <Button
+                android:id="@+id/btn_simple_bluetooth"
+                style="@style/baseRes"
+                android:text="简单蓝牙运用" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_noteTurn"
+                style="@style/baseRes"
+                android:text="小说翻页效果" />
+
+            <Button
+                android:id="@+id/btn_CalculatePrimeNnumber"
+                style="@style/baseRes"
+                android:text="计算质数" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_okhttpDownload"
+                style="@style/baseRes"
+                android:text="APK下载" />
+
+            <Button
+                android:id="@+id/btn_NBAScoreScrollListview"
+                style="@style/baseRes"
+                android:text="NBA球员得分表" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_binarySystem"
+                style="@style/baseRes"
+                android:text="二进制与字符串" />
+
+            <Button
+                android:id="@+id/btn_popwindows"
+                style="@style/baseRes"
+                android:text="pop框" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_LitePal"
+                style="@style/baseRes"
+                android:text="LitePal数据库" />
+
+            <Button
+                android:id="@+id/btn_filmDB"
+                style="@style/baseRes"
+                android:text="电影列表数据库" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_regularExpression"
+                style="@style/baseRes"
+                android:text="正则表达式的使用" />
+
+            <Button
+                android:id="@+id/btn_imageDB"
+                style="@style/baseRes"
+                android:text="图片数据库" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_stringSplit"
+                style="@style/baseRes"
+                android:text="字符串的四种分割方法" />
+
+            <Button
+                android:id="@+id/btn_echarts"
+                style="@style/baseRes"
+                android:text="webview曲线图" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_view_coordinate"
+                style="@style/baseRes"
+                android:text="View的坐标系" />
+
+            <Button
+                android:id="@+id/btn_translateLine"
+                style="@style/baseRes"
+                android:text="在线翻译" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_drivingLibrary"
+                style="@style/baseRes"
+                android:text="驾考宝典" />
+
+            <Button
+                android:id="@+id/btn_historyToday"
+                style="@style/baseRes"
+                android:text="历史上的今天" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_provinceArea"
+                style="@style/baseRes"
+                android:text="全国行政区域" />
+
+            <Button
+                android:id="@+id/btn_internationalNews"
+                style="@style/baseRes"
+                android:text="国际新闻" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_famousPeopleSay"
+                style="@style/baseRes"
+                android:text="名人名言" />
+
+            <Button
+                android:id="@+id/btn_checkPostOffice"
+                style="@style/baseRes"
+                android:text="全国邮编查询" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_airQuality"
+                style="@style/baseRes"
+                android:text="全国空气质量查询" />
+
+            <Button
+                android:id="@+id/btn_xiehouyu"
+                style="@style/baseRes"
+                android:text="歇后语" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_JokeAndInterestPic"
+                style="@style/baseRes"
+                android:text="笑话大全" />
+
+            <Button
+                android:id="@+id/btn_okGoTest"
+                style="@style/baseRes"
+                android:text="okhttp封装使用" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_boxOffice"
+                style="@style/baseRes"
+                android:text="电影票房" />
+
+            <Button
+                android:id="@+id/btn_nameOrigin"
+                style="@style/baseRes"
+                android:text="姓氏起源" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_DistinguishErCode"
+                style="@style/baseRes"
+                android:text="长按识别二维码" />
+
+            <Button
+                android:id="@+id/btn_selectFile"
+                style="@style/baseRes"
+                android:text="选择文件" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_fallView"
+                style="@style/baseRes"
+                android:text="飘落的字体" />
+
+            <Button
+                android:id="@+id/btn_randomColor"
+                style="@style/baseRes"
+                android:text="随机背景" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_goodAnswer"
+                style="@style/baseRes"
+                android:text="神回复" />
+
+            <Button
+                android:id="@+id/btn_breathLight"
+                style="@style/baseRes"
+                android:text="呼吸灯" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_LoopRotarySwitch"
+                style="@style/baseRes"
+                android:text="3D旋转切换" />
+
+            <Button
+                android:id="@+id/btn_ScratchView"
+                style="@style/baseRes"
+                android:text="刮刮乐2" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_rulerview"
+                style="@style/baseRes"
+                android:text="直尺" />
+
+            <Button
+                android:id="@+id/btn_SnailBar"
+                style="@style/baseRes"
+                android:text="蜗牛进度条" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_catloading"
+                style="@style/baseRes"
+                android:text="小猫进度条" />
+
+            <Button
+                android:id="@+id/btn_superloading"
+                style="@style/baseRes"
+                android:text="下载动画" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_LyricsSync"
+                style="@style/baseRes"
+                android:text="歌词同步" />
+
+            <Button
+                android:id="@+id/btn_flyingEditText"
+                style="@style/baseRes"
+                android:text="飞入的输入框" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_FlycoRoundView"
+                style="@style/baseRes"
+                android:text="圆角矩形按钮" />
+
+            <Button
+                android:id="@+id/btn_xEditText"
+                style="@style/baseRes"
+                android:text="自动添加空格" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_Dashboard"
+                style="@style/baseRes"
+                android:text="仪表盘" />
+
+            <Button
+                android:id="@+id/btn_TimerLine"
+                style="@style/baseRes"
+                android:text="时光轴" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_MaterialSwitch"
+                style="@style/baseRes"
+                android:text="开关和刮刮乐" />
+
+            <Button
+                android:id="@+id/btn_JelloToggle"
+                style="@style/baseRes"
+                android:text="拉扯效果" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_autoFinishEmail"
+                style="@style/baseRes"
+                android:text="自动补全邮箱" />
+
+            <Button
+                android:id="@+id/btn_translateWeb"
+                style="@style/baseRes"
+                android:text="网页翻译单词" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_customCheckBox"
+                style="@style/baseRes"
+                android:text="自定义选择框" />
+
+            <Button
+                android:id="@+id/btn_gridPassWordView"
+                style="@style/baseRes"
+                android:text="仿支付宝密码" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_materialIcon"
+                style="@style/baseRes"
+                android:text="字体变图标" />
+
+            <Button
+                android:id="@+id/btn_welcomeVideo"
+                style="@style/baseRes"
+                android:text="仿QQ登录播放视频" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_seekCircle"
+                style="@style/baseRes"
+                android:text="仪表盘进度条" />
+
+            <Button
+                android:id="@+id/btn_materialCode"
+                style="@style/baseRes"
+                android:text="仿锁屏密码输入样式" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_verticalSeekBar"
+                style="@style/baseRes"
+                android:text="垂直拖动条" />
+
+            <Button
+                android:id="@+id/btn_twoWaySeekBar"
+                style="@style/baseRes"
+                android:text="双向拖动条" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_bottomDialog"
+                style="@style/baseRes"
+                android:text="底部弹出对话框" />
+
+            <Button
+                android:id="@+id/btn_radialButton"
+                style="@style/baseRes"
+                android:text="展开的按钮" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_cityBus"
+                style="@style/baseRes"
+                android:text="城市公交" />
+
+            <Button
+                android:id="@+id/btn_TrainTicket"
+                style="@style/baseRes"
+                android:text="火车票" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_JiXiong"
+                style="@style/baseRes"
+                android:text="号码吉凶" />
+
+            <Button
+                android:id="@+id/btn_Tangshisongci"
+                style="@style/baseRes"
+                android:text="唐诗宋词" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_AskRobot"
+                style="@style/baseRes"
+                android:text="问答机器人" />
+
+            <Button
+                android:id="@+id/btn_longDistanceBus"
+                style="@style/baseRes"
+                android:text="长途汽车时间表" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_oilPrice"
+                style="@style/baseRes"
+                android:text="今日油价" />
+
+            <Button
+                android:id="@+id/btn_brokenview"
+                style="@style/baseRes"
+                android:text="玻璃破裂效果" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_pdfViewTest"
+                style="@style/baseRes"
+                android:text="加载PDF" />
+
+            <Button
+                android:id="@+id/btn_statusBarUtil"
+                style="@style/baseRes"
+                android:text="状态栏工具" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_fadeInText"
+                style="@style/baseRes"
+                android:text="逐字加载" />
+
+            <Button
+                android:id="@+id/btn_xyzInfo"
+                style="@style/baseRes"
+                android:text="状态和身高选择" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/fiftyShades"
+                style="@style/baseRes"
+                android:text="预加载" />
+
+            <Button
+                android:id="@+id/btn_todolist"
+                style="@style/baseRes"
+                android:text="删除添加排序" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_modulation"
+                style="@style/baseRes"
+                android:text="音量调节" />
+
+            <Button
+                android:id="@+id/btn_checkAllFile"
+                style="@style/baseRes"
+                android:text="查找文件和打开PDF" />
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_photopicker"
+                style="@style/baseRes"
+                android:text="仿微信选择图片" />
+
+            <Button
+                android:id="@+id/btn_introducePage"
+                style="@style/baseRes"
+                android:text="步骤引导页" />
+
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_simpleZxing"
+                style="@style/baseRes"
+                android:text="简易二维码扫描" />
+
+            <Button
+                android:id="@+id/btn_smsVerifyCatcher"
+                style="@style/baseRes"
+                android:text="读取手机验证码" />
+
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_musicSearch"
+                style="@style/baseRes"
+                android:text="爬虫获取歌曲列表" />
+
+            <Button
+                android:id="@+id/btn_VideoWallpaper"
+                style="@style/baseRes"
+                android:text="桌面播放视频" />
+
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_cardSwitch"
+                style="@style/baseRes"
+                android:text="卡片切换" />
+
+            <Button
+                android:id="@+id/btn_CalendarTest"
+                style="@style/baseRes"
+                android:text="日历控件3" />
+
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+
+            <Button
+                android:id="@+id/btn_fishAnimate"
+                style="@style/baseRes"
+                android:text="金鱼游动" />
+
+            <Button
+                android:id="@+id/btn_settingPage"
+                style="@style/baseRes"
+                android:text="设置页面封装" />
+
+        </LinearLayout>
+        <LinearLayout style="@style/baseLinearlayout">
+            <Button
+                android:id="@+id/btn_MNImageBrowser"
+                style="@style/baseRes"
+                android:text="图片交互特效" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--actionbar-->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical" />
+    <Button
+        android:id="@+id/btn_iosalert1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="普通提示框"
+        android:onClick="clicks"/>
+    <Button
+        android:id="@+id/btn_iosalert2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="列表提示框"
+        android:onClick="clicks"/>
+    <Button
+        android:id="@+id/btn_iosalert3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="带取消的提示框"
+        android:onClick="clicks"/>
+    <Button
+        android:id="@+id/btn_iosalert4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="上传头像的提示框"
+        android:onClick="clicks"/>
+    <Button
+        android:id="@+id/btn_iosalert5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录的提示框"
+        android:onClick="clicks"/>
+</LinearLayout>

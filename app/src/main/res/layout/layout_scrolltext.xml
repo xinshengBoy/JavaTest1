@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--actionbar-->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical" />
+    <!--可滑动的文字-->
+    <EditText
+        android:id="@+id/et_scrolltext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:focusable="false"
+        android:singleLine="true"
+        android:text="直接使用 EditText 就好了。因为edittext需要编辑和移动光标的缘故，使得它是可以水平滑动的。因此我们只需要设置其为透明背景，并且不可以获得焦点。（注：不能使用editable=“false”，因为这样就不能编辑滑动。而通过使用focusable同样不可编辑同时可以滑动），这里记录下来给大家点儿启示。不必用自以为聪明的方法办最笨的事儿。共勉。"
+        android:textSize="30sp" />
+    <!--让编辑框无焦点，不可编辑即可,注意，长度为包裹内容，这样就可以滑动很长的文字了-->
+    <!--跑马灯-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:text="最近做应用的时候有用到TextView单行长文本，当文本内容过长时候又想实现触摸水平滑动效果。网上找了很多，都没有看到有效解决方案。"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+    <!--一直循环，要给焦点才能滑动-->
+    <!--可滑动的顶部菜单-->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="首页"
+                    android:textSize="30sp" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="动态"
+                    android:textSize="30sp" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="公告"
+                    android:textSize="30sp" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="日历"
+                    android:textSize="30sp" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="行情"
+                    android:textSize="30sp" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="教育"
+                    android:textSize="30sp" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="图片"
+                    android:textSize="30sp" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="视频"
+                    android:textSize="30sp" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="监管"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/black" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <!--scroller-->
+    <LinearLayout
+        android:id="@+id/scroller_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/green"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/txt_scroller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="滚吧"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:background="@color/black"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_scroller_reset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_filmdetail_edit"
+            android:text="滚回原位"
+            android:textColor="@color/green"
+            android:textSize="20sp"
+            android:layout_margin="5dp"/>
+        <Button
+            android:id="@+id/btn_scroller_start"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_filmdetail_edit"
+            android:text="开始滚吧"
+            android:textColor="@color/green"
+            android:textSize="20sp"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+</LinearLayout>

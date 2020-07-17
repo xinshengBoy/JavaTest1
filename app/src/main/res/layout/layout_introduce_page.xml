@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--actionbar-->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical" />
+    <Button
+        android:id="@+id/btn_introduce1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="默认样式"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:background="@drawable/bg_filmdetail_edit"
+        android:layout_margin="5dp"/>
+    <Button
+        android:id="@+id/btn_introduce2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="折叠样式"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:background="@drawable/bg_filmdetail_edit"
+        android:layout_margin="5dp"/>
+    <Button
+        android:id="@+id/btn_introduce3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="滑出样式"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:background="@drawable/bg_filmdetail_edit"
+        android:layout_margin="5dp"/>
+</LinearLayout>

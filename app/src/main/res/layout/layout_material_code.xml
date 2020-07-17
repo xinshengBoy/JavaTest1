@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <!--actionbar-->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical" />
+    <!--默认样式  默认输入6位-->
+    <com.github.glomadrian.codeinputlib.CodeInput
+        android:id="@+id/codeInput_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:hint_text="输入密码"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"/>
+    <!--自定义样式-->
+    <com.github.glomadrian.codeinputlib.CodeInput
+        android:id="@+id/codeInput_custom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:underline_color="@color/green"
+        app:underline_selected_color="@color/red"
+        app:text_color="@color/black"
+        app:hint_color="@color/gray"
+        app:hint_text="确认密码"
+        app:codes="4"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"/>
+</LinearLayout>

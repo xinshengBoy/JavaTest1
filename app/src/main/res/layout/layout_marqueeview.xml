@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <!--actionbar-->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical" />
+
+    <com.sunfusheng.marqueeview.MarqueeView
+        android:id="@+id/marqueeview1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:mvAnimDuration = "1000"
+        app:mvTextColor="@android:color/holo_red_dark"
+        app:mvTextSize="16sp"
+        app:mvSingleLine="true"
+        app:mvGravity="center"/>
+    <com.sunfusheng.marqueeview.MarqueeView
+        android:id="@+id/marqueeview2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:mvAnimDuration = "1000"
+        app:mvTextColor="@android:color/holo_blue_bright"
+        app:mvTextSize="16sp"
+        app:mvSingleLine="true"/>
+    <!--
+        app:mvAnimDuration = "1000"  每条公告显示的时间
+        app:mvTextColor="@android:color/holo_red_dark"  公告文字显示的颜色
+        app:mvTextSize="16sp"  公告文字显示的字体大小
+        app:mvSingleLine="true"  是否单行显示
+    -->
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--actionbar-->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical" />
+
+    <EditText
+        android:id="@+id/et_autochangeline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="使用Canvas的drawText绘制文本是不会自动换行的，即使一个很长很长的字符串，drawText也只显示一行，超出部分被隐藏在屏幕之外。可以逐个计算每个字符的宽度，通过一定的算法将字符串分割成多个部分，然后分别调用drawText一部分一部分的显示， 但是这种显示效率会很低。" />
+
+    <Button
+        android:id="@+id/btn_autoChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="输入完成" />
+
+    <ImageView
+        android:id="@+id/iv_autoChangeLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"/>
+</LinearLayout>

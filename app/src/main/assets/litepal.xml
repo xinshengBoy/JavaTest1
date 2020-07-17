@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="fruitdb" />
+    <version value="4" />
+    <list>
+        <mapping class="com.just.test.bean.Fruits" />
+    </list>
+</litepal>

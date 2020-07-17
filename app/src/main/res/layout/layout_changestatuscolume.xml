@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_changestatus"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <!--
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    	在需要改变状态栏的地方写上这两句代码
+    -->
+
+    <Button
+        android:id="@+id/btn_changeStatusColume1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#FFF6AA00"
+        android:text="黄色"
+        android:textSize="26sp" />
+
+    <Button
+        android:id="@+id/btn_changeStatusColume2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#FF2DCD01"
+        android:text="绿色"
+        android:textSize="26sp" />
+
+    <Button
+        android:id="@+id/btn_changeStatusColume3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#FF002A8C"
+        android:text="蓝色"
+        android:textSize="26sp" />
+
+    <Button
+        android:id="@+id/btn_changeStatusColume4"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#FFE61A5F"
+        android:text="粉色"
+        android:textSize="26sp" />
+
+</LinearLayout>

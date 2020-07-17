@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--actionbar-->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_oilprice"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/bg_filmdetail_edit"
+            android:hint="请输入省份或直辖市"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_oilPrice_query"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="2"
+            android:background="@drawable/bg_filmdetail_edit"
+            android:text="查询"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txt_oilprice_createTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="20sp"
+        android:textColor="@color/red"/>
+    <TextView
+        android:id="@+id/txt_oilprice_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+</LinearLayout>

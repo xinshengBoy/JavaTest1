@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--actionbar-->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical" />
+    <com.just.test.custom.PieChartView
+        android:id="@+id/iv_piechartview"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:circleRadius="100dp"
+        app:textSize="14sp"/>
+    <!--app:circleRadius="100dp"  饼状图半径
+        app:textSize="14sp"  指示文字的大小-->
+</LinearLayout>

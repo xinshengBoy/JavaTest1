@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--actionbar-->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical" />
+    <!--默认样式的日历样式-->
+    <com.maning.calendarlibrary.MNCalendar
+        android:id="@+id/view_mncalendar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <!--自定义的日历样式-->
+    <com.maning.calendarlibrary.MNCalendar
+        android:id="@+id/view_mncalendar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--actionbar-->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical" />
+    <com.just.test.custom.KeywordsFlow
+        android:id="@+id/keywords_flow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/headerLayout"
+        android:layout_above="@+id/btn_keyinput_out"/>
+    <Button
+        android:id="@+id/btn_keyinput_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="飞入"
+        android:layout_alignParentBottom="true"/>
+    <Button
+        android:id="@+id/btn_keyinput_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="飞出"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>

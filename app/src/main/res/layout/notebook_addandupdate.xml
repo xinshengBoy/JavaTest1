@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="#F0E68C" >
+
+    <TextView
+        android:id="@+id/txt_addTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="标题" 
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/et_addTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_addContent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txt_addTitle"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:background="#7FFFD4"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_addContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_save_notebook"
+        android:layout_alignLeft="@+id/txt_addContent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txt_addContent"
+        android:background="#7FFFD4"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+         android:paddingLeft="5dp"
+        android:paddingTop="3dp"
+        android:ems="10"
+        android:gravity="top"
+        android:paddingRight="10dp" />
+
+    <TextView
+        android:id="@+id/txt_addContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/txt_addTitle"
+        android:layout_below="@+id/et_addTitle"
+        android:text="内容"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btn_save_notebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_addContent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/et_addContent"
+        android:background="#ADFF2F"
+        android:paddingRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="保存" />
+
+</RelativeLayout>

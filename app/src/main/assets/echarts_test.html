@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+</head>
+<body>
+<!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+<div id="main" style="width:1000px;height:400px"></div>
+<!-- ECharts单文件引入 -->
+<!-- http://echarts.baidu.com/echarts2/doc/start.html 参考网址-->
+<script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+<script type="text/javascript">
+        // 路径配置
+        require.config({
+            paths: {
+                echarts: 'http://echarts.baidu.com/build/dist'
+            }
+        });
+
+        // 使用
+        require(
+            [
+                'echarts',
+                'echarts/chart/bar' // 使用柱状图就加载bar模块，按需加载
+            ],
+            function (ec) {
+                // 基于准备好的dom，初始化echarts图表
+                var myChart = ec.init(document.getElementById('main'));
+
+                var option = {
+                    title:{
+                        text:'本公司全年产量'
+                    },
+                    tooltip: {
+                        show: true
+                    },
+                    legend: {
+                        data:['产量']
+                    },
+                    xAxis : [
+                        {
+                            type : 'category',
+                            data : ["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"]
+                        }
+                    ],
+                    yAxis : [
+                        {
+                            type : 'value'
+                        }
+                    ],
+                    series : [
+                        {
+                            "name":"产量",
+                            "type":"bar",
+                            "data":[51,80,40,60,70,90,120,88,65,61,99,102]
+                        }
+                    ]
+                };
+
+                // 为echarts对象加载数据
+                myChart.setOption(option);
+            }
+        );
+    </script>
+</body>

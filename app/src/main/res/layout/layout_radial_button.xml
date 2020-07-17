@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/radialButton_home"
+        style="@style/radialButtonLayoutStyle"
+        android:text="@string/radialHome"/>
+    <TextView
+        android:id="@+id/radialButton_find"
+        style="@style/radialButtonLayoutStyle"
+        android:text="@string/radialFind"/>
+    <TextView
+        android:id="@+id/radialButton_chat"
+        style="@style/radialButtonLayoutStyle"
+        android:text="@string/radialChat"/>
+    <TextView
+        android:id="@+id/radialButton_friend"
+        style="@style/radialButtonLayoutStyle"
+        android:text="@string/radialFriend"/>
+    <TextView
+        android:id="@+id/radialButton_setting"
+        style="@style/radialButtonLayoutStyle"
+        android:text="@string/radialSetting"/>
+    <TextView
+        android:id="@+id/radialButton_menu"
+        style="@style/radialButtonLayoutStyle"
+        android:text="@string/radialMenu"/>
+</FrameLayout>

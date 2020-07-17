@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--actionbar-->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical" />
+    <com.just.test.custom.RulerView
+        android:id="@+id/view_rulerview"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="top"
+        app:begin="0"
+        app:end="100"
+        app:textColor="@color/red"
+        app:textSizes="20sp"
+        app:indicateColor="@color/about_bg"
+        app:indicatePadding="10dp"
+        app:indicateWidth="5dp"
+        android:layout_marginTop="20dp"/>
+
+    <!--
+    app:begin="0"   开始的数值
+        app:end="100"  结束的数值
+        app:textColor="@color/red"  显示刻度的文字颜色
+        app:textSize="20sp"  显示刻度文字大小
+        app:indicateColor="@color/about_bg"  刻度的颜色
+        app:indicatePadding="10dp"   每个刻度之间的距离
+        app:indicateWidth="5dp"  每个刻度的长度
+    -->
+
+</LinearLayout>

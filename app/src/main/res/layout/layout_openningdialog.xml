@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--actionbar-->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical" />
+    <Button
+        android:id="@+id/btn_openningdialog_success"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="成功提示框" />
+
+    <Button
+        android:id="@+id/btn_openningdialog_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="错误提示框" />
+
+    <Button
+        android:id="@+id/btn_openningdialog_warning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="警告提示框" />
+
+    <Button
+        android:id="@+id/btn_openningdialog_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="信息提示框提示框" />
+    <Button
+        android:id="@+id/btn_openningdialog_custom1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自定义提示框" />
+    <Button
+        android:id="@+id/btn_openningdialog_custom2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自定义提示框" />
+</LinearLayout>

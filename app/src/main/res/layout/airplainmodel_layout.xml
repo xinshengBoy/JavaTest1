@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--actionbar-->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical" />
+
+    <com.just.test.custom.CustomRect
+        android:id="@+id/custom_rect"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+    <com.just.test.custom.CustomRound
+        android:id="@+id/custom_round"
+        android:layout_width="500dp"
+        android:layout_height="200dp" />
+    <com.just.test.custom.CustomLines
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:text="飞行模式测试" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_setting_airpPlainModel"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:text="直接开启飞行模式" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/et_setting_airplainmodel"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:hint="您想在多久之后进入飞行模式(分钟)"-->
+    <!--android:inputType="number" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_airplain"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:text="开启飞行模式" />-->
+
+
+</LinearLayout>

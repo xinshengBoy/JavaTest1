@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--actionbar-->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical" />
+    <com.just.test.custom.JelloToggle
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="拉我呀"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@color/green"/>
+    </com.just.test.custom.JelloToggle>
+
+    <com.just.test.custom.JelloToggle
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="再拉我一次试试"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@color/red"/>
+    </com.just.test.custom.JelloToggle>
+</LinearLayout>

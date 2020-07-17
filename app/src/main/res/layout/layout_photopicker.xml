@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--actionbar-->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical" />
+    <Button
+        android:id="@+id/btn_singlecheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="单选"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        android:background="@drawable/bg_filmdetail_edit"/>
+    <Button
+        android:id="@+id/btn_multicheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="多选"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        android:background="@drawable/bg_filmdetail_edit"/>
+    <Button
+        android:id="@+id/btn_startPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="拍照"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        android:background="@drawable/bg_filmdetail_edit"/>
+    <GridView
+        android:id="@+id/gridview_photopicker"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp"/>
+</LinearLayout>

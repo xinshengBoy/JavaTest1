@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--actionbar-->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical" />
+    <Button
+        android:id="@+id/btn_videoWallpaper_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_filmdetail_edit"
+        android:layout_margin="5dp"
+        android:text="设置壁纸"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+    <Button
+        android:id="@+id/btn_videoWallpaper_silence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_filmdetail_edit"
+        android:layout_margin="5dp"
+        android:text="设置静音"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+    <Button
+        android:id="@+id/btn_videoWallpaper_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_filmdetail_edit"
+        android:layout_margin="5dp"
+        android:text="取消静音"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+    <Button
+        android:id="@+id/btn_videoWallpaper_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_filmdetail_edit"
+        android:layout_margin="5dp"
+        android:text="退出"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+</LinearLayout>

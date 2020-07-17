@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<!--actionbar-->
+	<LinearLayout
+		android:id="@+id/headerLayout"
+		android:layout_width="fill_parent"
+		android:layout_height="45dp"
+		android:orientation="vertical" />
+	<TextView 
+	    android:id="@+id/txt_customFont"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="20sp"
+	    android:text="在开发的过程中，android系统自带的字体中规中矩，样式也不外乎就是加加粗，打打斜，很多时候并不能满足我们的需求，此时我们可以引入其他自己下载好的字体，植入到我们自己的程序中，按需使用，大致的步骤如下：
+
+    1.首先下载.ttf格式的字体文件，互联网中有各式各样的字体文件，甚至会有肥猪流脑残火星文，可以将这些文件下载来，点击可以预览效果，选自己喜欢的。
+
+    2.将选好的.ttf字体文件放入工程下的assets目录中，例如下图：
+	    "/>
+</LinearLayout>

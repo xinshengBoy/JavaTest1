@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toggle="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--actionbar-->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical" />
+    <com.zcw.togglebutton.ToggleButton
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        toggle:tbOnColor="#f00"
+        toggle:tbOffColor="#ddd"
+        toggle:tbSpotColor="#00f"
+        toggle:tbOffBorderColor="#000"
+        toggle:tbBorderWidth="2dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"/>
+    <!--
+    tbOnColor  : 选中的底色
+    tbOffColor ： 未选中的底色
+    tbSpotColor ： 中间圆球的颜色
+    tbOffBorderColor : 未选中时的边框色
+    -->
+    <com.zcw.togglebutton.ToggleButton
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        toggle:tbOnColor="#FF199609"
+        toggle:tbOffColor="#FF313335"
+        toggle:tbSpotColor="#FFFF8C19"
+        toggle:tbOffBorderColor="#FF313335"
+        toggle:tbBorderWidth="2dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"/>
+</LinearLayout>

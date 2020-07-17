@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <!--actionbar-->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_particle_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RandomMoving"/>
+        <Button
+            android:id="@+id/btn_particle_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Corner"/>
+        <Button
+            android:id="@+id/btn_particle_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Horizontal"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_particle_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="BidiHorizontal"/>
+        <Button
+            android:id="@+id/btn_particle_5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Vertical"/>
+        <Button
+            android:id="@+id/btn_particle_6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="BidiVertical"/>
+    </LinearLayout>
+    <!--<com.yasic.library.particletextview.View.ParticleTextSurfaceView-->
+        <!--android:id="@+id/txt_particle_textview1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp" />-->
+    <!--<com.yasic.library.particletextview.View.ParticleTextSurfaceView-->
+        <!--android:id="@+id/txt_particle_textview2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp" />-->
+    <!--<com.yasic.library.particletextview.View.ParticleTextSurfaceView-->
+        <!--android:id="@+id/txt_particle_textview3"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp" />-->
+    <!--<com.yasic.library.particletextview.View.ParticleTextSurfaceView-->
+        <!--android:id="@+id/txt_particle_textview4"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp" />-->
+    <!--<com.yasic.library.particletextview.View.ParticleTextSurfaceView-->
+        <!--android:id="@+id/txt_particle_textview5"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp" />-->
+    <!--<com.yasic.library.particletextview.View.ParticleTextSurfaceView-->
+        <!--android:id="@+id/txt_particle_textview6"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp" />-->
+    </LinearLayout>
+</ScrollView>

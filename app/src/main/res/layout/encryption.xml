@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <!--actionbar-->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@+id/layout_see"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="明文："
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/et_see"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入要加密的字符串"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_NoSee"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密文："
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/et_NoSee"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:editable="false"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_CanSee"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="明文："
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/et_CanSee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显示密文，并解密"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/txt_md5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conceal加密"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_margin="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/et_conceal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textColorHint="@color/gray"
+            android:background="@drawable/bg_filmdetail_edit"
+            android:hint="请输入要加密的字符串"
+            android:layout_margin="5dp"/>
+        <Button
+            android:id="@+id/btn_conceal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="加密"
+            android:background="@drawable/bg_filmdetail_edit"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txt_conceal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/red"
+        android:layout_margin="5dp"/>
+</LinearLayout>

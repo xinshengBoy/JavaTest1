@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--actionbar-->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="个人资料设定"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <com.xyz.xswitch.XyzSwitch
+        android:id="@+id/view_xyzSwitch"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        app:xBackgroundFromColor="@color/white"
+        app:xBackgroundToColor="@color/blue"
+        app:xChangedTime="200"
+        app:xIconHeight="50dp"
+        app:xIconWidth="50dp"
+        app:xLeftIcon="@drawable/icon_man"
+        app:xRadian="50dp"
+        app:xRightIcon="@drawable/icon_women" />
+    <!--
+        app:xIconWidth="50dp"  每个item图片的长度
+        app:xIconHeight="50dp" 每个item图片的高度
+        app:xRadian="50dp"  圆角弧度
+        app:xChangedTime="200" 两个图片之间切换完成的时间
+        app:xLeftIcon="@drawable/switchon"  左边的图标
+        app:xRightIcon="@drawable/switchoff"  邮编的图标
+        xBackgroundFromColor 	背景起始颜色
+        xBackgroundToColor 	背景终止颜色
+    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="体重" />
+
+            <TextView
+                android:id="@+id/txt_ruler_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="kg" />
+        </LinearLayout>
+
+        <com.xyz.xruler.XyzRuler
+            android:id="@+id/view_ruler_weight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:rAnimTime="100"
+            app:rBegin="0"
+            app:rBorderColor="@color/black"
+            app:rBorderWidth="1dp"
+            app:rEnd="250"
+            app:rLineColor="@color/black"
+            app:rLineHeight="15dp"
+            app:rLineWidth="1dp"
+            app:rPixel="10"
+            app:rTextColor="@color/black"
+            app:rTextSize="12sp"
+            app:rTrigonSize="20dp" />
+        <!--
+            app:rAnimTime="100"   回弹动画时间基准值
+            app:rBegin="0"  刻度尺范围开始值
+            app:rEnd="250"  刻度尺范围结束值
+            app:rBorderColor="@color/black"  边框颜色
+            app:rBorderWidth="5dp"  边框宽度
+            app:rLineWidth="3dp"  刻度线宽度
+            app:rLineHeight="10dp"  刻度线高度
+            app:rTextSize="12sp"  刻度文字大小
+            app:rTextColor="@color/black"  刻度文字颜色
+            app:rTrigonSize="20dp"  边框模式下三角形大小
+        -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="出生" />
+
+            <TextView
+                android:id="@+id/txt_ruler_birth"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="年" />
+        </LinearLayout>
+
+        <com.xyz.xruler.XyzRuler
+            android:id="@+id/view_ruler_birth"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:rAnimTime="100"
+            app:rBegin="1980"
+            app:rBorderColor="@color/green"
+            app:rBorderWidth="1dp"
+            app:rEnd="2017"
+            app:rLineColor="@color/green"
+            app:rLineHeight="15dp"
+            app:rLineWidth="1dp"
+            app:rPixel="50"
+            app:rTextColor="@color/green"
+            app:rTextSize="12sp"
+            app:rTrigonSize="20dp" />
+        <!--
+            app:rAnimTime="100"   回弹动画时间基准值
+            app:rBegin="0"  刻度尺范围开始值
+            app:rEnd="250"  刻度尺范围结束值
+            app:rBorderColor="@color/black"  边框颜色
+            app:rBorderWidth="5dp"  边框宽度
+            app:rLineWidth="3dp"  刻度线宽度
+            app:rLineHeight="10dp"  刻度线高度
+            app:rTextSize="12sp"  刻度文字大小
+            app:rTextColor="@color/black"  刻度文字颜色
+            app:rTrigonSize="20dp"  边框模式下三角形大小
+            app:rPixel="100"  每个刻度尺最小单位之间的间隔
+        -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/circularAnim_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_circularAnim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wechat_icon"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/btn_circularAnim1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="水纹波动"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/btn_circularAnim2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="跳转"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</LinearLayout>

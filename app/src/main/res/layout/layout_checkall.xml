@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<!--actionbar-->
+	<LinearLayout
+		android:id="@+id/headerLayout"
+		android:layout_width="fill_parent"
+		android:layout_height="45dp"
+		android:orientation="vertical" />
+    <EditText 
+        android:id="@+id/et_findAllType"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="10dp"
+		android:paddingStart="5dp"
+        android:hint="文件类型(如.txt)"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/black"
+		android:textSize="20sp"
+		android:background="@drawable/bg_filmdetail_edit" />
+	<Button 
+	    android:id="@+id/btn_checkAll"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="查询"
+	    android:textColor="@color/black"
+	    android:textSize="20sp"
+	    android:layout_margin="10dp"
+		android:background="@drawable/bg_filmdetail_edit"/>
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="注：如果打开文件后可按返回键返回列表"
+		android:textColor="@color/red"
+		android:layout_margin="10dp"/>
+	<ListView 
+	    android:id="@+id/list_checkAll"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"/>
+	<!--打开TXT文本文件-->
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<TextView
+			android:id="@+id/txt_checkAllFile_txt"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="18sp"
+			android:textColor="@color/black"
+			android:layout_margin="5dp"
+			android:visibility="gone"/>
+	</ScrollView>
+	<!--显示PDF文件-->
+	<com.github.barteksc.pdfviewer.PDFView
+		android:id="@+id/view_checkFile_pdfview"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:visibility="gone"/>
+</LinearLayout>

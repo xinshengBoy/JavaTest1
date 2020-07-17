@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--actionbar-->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical" />
+
+    <com.just.test.custom.CloudEditTextImp
+        android:id="@+id/et_autoFinishEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:hint="请输入邮箱或手机号"
+        android:inputType="textEmailAddress|textMultiLine"
+        android:padding="10dp"
+        android:textColorHint="@color/yellow" />
+
+    <Button
+        android:id="@+id/btn_flytextview_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="更换"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <com.just.test.custom.FlyTxtView
+        android:id="@+id/view_flyTextview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

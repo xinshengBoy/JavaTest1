@@ -1,0 +1,240 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+    defaultConfig {
+        applicationId "com.just.test"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 7
+        versionName "1.1.7"
+        //极光推送配置开始
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME : applicationId,
+                JPUSH_APPKEY : "51834df5aec4014fd9979a97", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL : "developer-default", //用户渠道统计的渠道名称
+        ]
+        //极光推送配置结束
+    }
+    buildTypes {
+        release {
+            //包版时自动移除程序中无用的资源文件
+            minifyEnabled true
+            shrinkResources true
+
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets { main { assets.srcDirs = ['src/main/assets', 'src/main/assets/'] } }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:design:28.0.0'
+    //调色板   获取颜色值
+    implementation 'com.android.support:palette-v7:28.0.0'
+    //对话框集成
+    api 'com.github.1em0nsOft:LemonHello4Android:1.0.2'
+    api 'com.github.1em0nsOft:LemonBubble4Android:1.0.13'
+    //鲁班，图片压缩工具
+    api 'io.reactivex:rxandroid:1.2.1'
+    api 'io.reactivex:rxjava:1.3.0'
+    api 'top.zibin:Luban:1.1.8'
+    //透明引导图
+    api 'com.jaydenxiao:guider:1.0.0'
+    //UserGuideView 也是一个透明的引导图
+    api 'com.zhl.userguideview:Userguidelibrary:1.0.1'
+    //CircleImageView 自动生成圆形头像
+    api 'de.hdodenhof:circleimageview:2.2.0'
+    //圆形图像  circleview
+    api 'com.github.youngkaaa:circleview:0.1.0'
+    //textdrawable 文字头像
+    api 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
+    //marqueeview  翻页公告
+    api 'com.sunfusheng:marqueeview:1.2.0'
+    //各种加载中进度条的样式  SpinKit
+    api 'com.github.ybq:Android-SpinKit:1.2.0'
+    //图片放大缩小
+    api 'com.commit451:PhotoView:1.2.4'
+    //picasso-facedetection-transformation
+    api 'com.github.aryarohit07:picasso-facedetection-transformation:0.3.0'
+    api 'com.google.android.gms:play-services-vision:20.1.0'
+    api 'com.squareup.picasso:picasso:2.5.2'
+    //Compressor 图片压缩
+    api 'id.zelory:compressor:1.0.4'
+    //SimpleTagImageView 给图片加tag标签
+    api 'net.wujingchao.android.view:simple-tag-imageview:1.0.1'
+    //LiquidButton 一个动态加载进度条
+    api 'com.gospelware.liquidbutton:liquidButtonLib:1.1.5'
+    // loadingview 一个炫酷的加载进度条
+    api 'com.ldoublem.appleviewlib:appleviewlib:0.0.1'
+    //StepView 指示器
+    api 'com.github.baoyachi:StepView:1.9'
+    //codeview 代码加载器
+    api 'thereisnospon.codeview:codeview:0.3.1'
+    //showcaseview 引导页
+    api 'com.github.amlcurran.showcaseview:library:5.4.3'
+    //CardStackView 卡片交互体验
+    api 'com.loopeer.library:cardstack:1.0.2'
+    //图片模糊库  Blurry
+    api 'jp.wasabeef:blurry:2.1.1'
+    //shape imageview 对图片设置各种形状
+    api 'com.github.siyamed:android-shape-imageview:0.9.3'
+    //状态框
+    api 'com.zcw:togglebutton-library:1.0.0'
+    //仿QQ消息未读消息数量提示  badgeview
+    api 'q.rorbin:badgeview:1.1.0'
+    //仿微信小视频录制
+    api 'com.lqr.videorecordview:library:1.0.0'
+    //timesqure 日历控件
+    api 'com.squareup:android-times-square:1.6.5'
+    //开源自定义日历列表  使用超级简单，效果超级好
+    api 'com.github.traex.calendarlistview:library:1.2.3'
+    //日历控件
+    api 'com.github.maning0303:MNCalendar:V1.0.2'
+    //由于讯飞语音的jar包要放在特殊的lib文件夹下面
+    api files('src/main/jniLibs/Msc.jar')
+    //滑动条百分比
+    api 'org.adw.library:discrete-seekbar:1.0.1'
+    //按钮
+    api 'com.github.vajro:MaterialDesignLibrary:1.6'
+    //极光推送
+    api 'cn.jiguang.sdk:jpush:3.0.5'  // 此处以JPush 3.0.5 版本为例。
+    api 'cn.jiguang.sdk:jcore:1.1.2'  // 此处以JCore 1.1.2 版本为例。
+    //状态栏沉浸
+    api ('com.github.niorgai:StatusBarCompat:2.1.3', {
+        exclude group: 'com.android.support'
+    })
+    //eventbus
+    api 'org.greenrobot:eventbus:3.1.1'
+    //lottie动画
+    api 'com.airbnb.android:lottie:2.0.0-beta4'
+    //FancyShowCaseView  控件使用步骤提示框
+//    api 'com.github.faruktoptas:FancyShowCaseView:latest.release.here'
+    //SwipeMenuListView 侧滑删除
+    api 'com.baoyz.swipemenulistview:library:1.3.0'
+    //轻量级简单提示框
+    api 'com.github.limxing:Android-PromptDialog:1.1.1'
+    //ParticleTextView   一个用粒子动画显示文字的 Android 自定义 View
+    api 'yasic.library.ParticleTextView:particletextview:0.0.4'
+    //base基类，Base是针对于Android开发封装好一些常用的基类，主要包括通用的Adapter、Activity、Fragment、Dialog等、和一些常用的Util类，只为更简单。
+    api 'com.king.base:base:2.0.1'
+    //微信网页下拉显示的顶部背景样式
+    api 'homhomlin.lib:sldinglayout:0.9.0'
+    //XXDialog
+    api 'com.github.luoshihai:XXDialog:v1.0.2'
+    //ArrowDownloadButton  下载按钮进度条特效
+    api 'com.github.fenjuly:ArrowDownloadButton:9e15b85e8a'
+    //波浪效果 ripple
+    api 'com.skyfishjy.ripplebackground:library:1.0.1'
+    //快速集成无限循环广告栏
+    api 'com.bigkoo:convenientbanner:2.0.5'
+    //viewpager切换的动画库
+    api 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:1.2.32@aar'
+    //Glide的网络请求部分可以使用当前最流行的网络请求框架Volley或OkHttp，也可以通过Glide的ModelLoader接口自己写网络请求。
+    api 'com.github.bumptech.glide:glide:4.9.0'
+    //kenburnsview  一种像播放视频一样的图片展示控件
+    api 'com.flaviofaria:kenburnsview:1.0.7'
+    //淡淡发光的文字，类似于IOS锁屏时所提示的滑动解锁的样式
+    api 'com.romainpiel.shimmer:library:1.4.0@aar'
+    //仿照IOS样式的对话框，体验很好，使用方便
+    api 'com.bigkoo:alertview:1.0.3'
+    //图片裁剪  android-crop
+    api 'com.soundcloud.android:android-crop:1.0.1@aar'
+    //gif加载显示控件
+    api 'pl.droidsonroids.gif:android-gif-drawable:1.2.8'
+    //LitePal数据库
+    api 'org.litepal.android:core:1.6.1'
+    //okhttp网络框架
+    api 'com.zhy:okhttputils:2.6.2'
+    //长按识别图中二维码
+    api 'com.github.BolexLiu:PressScanCode:v1.0.0'
+    //选择手机文件
+    api 'com.leon:lfilepickerlibrary:1.0'
+    //刮刮乐
+    api 'com.github.cooltechworks:ScratchView:v1.1'
+    //catloading 一个加载进度条
+    api 'com.roger.catloadinglibrary:catloadinglibrary:1.0.1'
+    //自动实现圆角矩形按钮
+    api 'com.flyco.roundview:FlycoRoundView_Lib:1.1.4@aar'
+    //EditText输入电话号码、银行卡号自动添加空格分割
+    api 'com.xw.repo:xedittext:2.0.2@aar'
+    //MaterialAnimatedSwitch 开关  https://github.com/glomadrian/material-animated-switch
+    api 'com.github.glomadrian:MaterialAnimatedSwitch:1.1@aar'
+    //文字刮刮乐
+    api 'com.github.cooltechworks:ScratchView:v1.1'
+    //支付宝密码输入框开源框架
+    api 'com.jungly:gridPasswordView:0.3'
+    //仿密码输入样式
+    api 'com.github.glomadrian:CodeInput:1.1@aar'
+    //material特性   底部弹出对话框
+    api 'com.github.rey5137:material:1.2.4'
+    //load_toast
+    api 'net.steamcrafted:load-toast:1.0.10'
+    //从底部右侧滑向左侧的菜单
+    api 'com.github.alexkolpa:floating-action-button-toolbar:0.5.1'
+    //xml转json和json转xml
+    api 'com.github.smart-fun:XmlToJson:1.3.2'
+    //玻璃破裂效果
+    api 'com.zys:brokenview:1.0.3'
+    //加载pdf
+    api 'com.github.barteksc:android-pdf-viewer:2.7.0-beta'
+    //数据加密
+    api 'com.facebook.conceal:conceal:1.0.1@aar'
+    //设置状态栏的工具类
+    api 'com.jaeger.statusbarutil:library:1.4.0'
+    //开源switch选择器,可自定义
+    api 'com.xyz.xswitch:xswitch:1.0.1'
+    //xrule 直尺，可用于选择长度或者身高效果
+    api 'com.xyz.xruler:xruler:1.0.4'
+    //加载数据时先显示默认的布局样式
+    api 'com.github.florent37:fiftyshadesof:1.0.0'
+    //添加,删除和排序动画效果。
+    api 'com.github.yalantis:todolist:v1.0.1'
+    //stetho ,fackbook开源框架，主要用于调试查看手机数据库
+    api 'com.facebook.stetho:stetho:1.3.1'
+    //photopicker 仿微信选择图片
+    api 'com.foamtrace:photopicker:1.0'
+    //引导页
+//    api 'com.zqg:library:1.0.2'
+    //步骤引导框
+    api 'com.zhl.userguideview:Userguidelibrary:1.0.1'
+    //快速实现二维码扫描
+    api 'com.acker:simplezxing:1.5'
+    //自动读取手机短信验证码
+    api 'com.github.stfalcon:smsverifycatcher:0.3.1'
+    //facebook开源特效与IOS滑动解锁样式一致
+    api 'com.facebook.shimmer:shimmer:0.1.0@aar'
+    //高斯模糊
+    api 'com.github.Commit451:NativeStackBlur:1.0.5'
+    //VideoWallpaper可以将本地mp4文件设置成手机桌面，手机桌面原来可以如此炫酷
+    api 'com.dingmouren.videowallpaper:videowallpaper:1.0.1'
+    //卡片预览，可作为app的欢迎页面使用
+    api 'com.bakerj:infinite-cards:1.0.2'
+    //设置页面的封装
+    api 'com.leon:lsettingviewlibrary:1.5.0'
+    //Debug监听程序崩溃日志,直接页面展示崩溃日志列表
+    api 'com.github.maning0303:MNCrashMonitor:V1.0.2'
+    //交互特效的图片浏览框架
+    api 'com.github.maning0303:MNImageBrowser:V1.0.1'
+    //xutils3的数据库，单独拉出来使用的开源框架
+    api 'com.github.maning0303:MNXUtilsDB:V1.0.0'
+    //视频开源框架
+    api 'com.github.maning0303:MNVideoPlayer:V1.0.3'
+
+    implementation ('com.github.ozodrukh:CircularReveal:2.0.1@aar') {
+        transitive = true
+    }
+}

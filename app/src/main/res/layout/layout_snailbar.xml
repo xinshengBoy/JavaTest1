@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--actionbar-->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical" />
+    <Button
+        android:id="@+id/btn_snailbar_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:textSize="20sp"
+        android:textColor="@color/red"
+        android:text="开始下载"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_filmdetail_edit"/>
+    <com.just.test.custom.SnailBar
+        android:id="@+id/bar_snailbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:thumb="@drawable/snailanim"
+        android:visibility="invisible"
+        android:layout_margin="10dp"
+        android:max="100"
+        android:progress="0"/>
+    <TextView
+        android:id="@+id/txt_snailbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/red"
+        android:textSize="20sp"/>
+</LinearLayout>

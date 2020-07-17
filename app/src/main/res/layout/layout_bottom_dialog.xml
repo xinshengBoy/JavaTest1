@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--actionbar-->
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <Button
+            android:id="@+id/btn_bottomDialog_start"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_filmdetail_edit"
+            android:onClick="onBottomDialogClick"
+            android:text="添加"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_bottomDialog_start2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_filmdetail_edit"
+            android:onClick="onBottomDialogClick2"
+            android:text="打开"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <Button
+            android:id="@+id/btn_bottomDialog_start3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_filmdetail_edit"
+            android:text="对话框1"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_bottomDialog_start4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_filmdetail_edit"
+            android:text="对话框2"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <!--material选项卡-->
+    <com.rey.material.widget.TabIndicatorView
+        android:id="@+id/indicator_material"
+        style="@style/Material.Widget.TabPageIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:tpi_centerCurrentTab="true"
+        app:tpi_indicatorColor="@color/green"
+        app:tpi_mode="scroll"
+        app:tpi_tabPadding="5dp"
+        app:tpi_tabRipple="@style/Material" />
+
+    <com.just.test.viewpager.CustomViewPager
+        android:id="@+id/view_customview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

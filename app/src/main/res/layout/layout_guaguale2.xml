@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp" >
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:background="@android:color/holo_red_dark"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="谢谢惠顾"
+            android:textSize="40dp" />
+
+        <com.just.test.widget.EraseView
+            android:id="@+id/eraseView1"
+            android:layout_width="300dp"
+            android:layout_height="150dp" />
+    </RelativeLayout>
+
+</LinearLayout>

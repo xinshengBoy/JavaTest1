@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:id="@+id/layout_sharePreference">
+    
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <EditText
+            android:id="@+id/et_sharePreference"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="请输入要保存的字符" />
+        <Button 
+            android:id="@+id/btn_sharePreference"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保存"/>
+    </LinearLayout>
+	<TextView 
+	    android:id="@+id/txt_sharePreference"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="value:"/>
+	<CheckBox 
+	    android:id="@+id/ck_sharePreference"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="记住密码"/>
+    <ImageView
+        android:id="@+id/iv_sharePreference"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg01"
+        android:scaleType="fitXY" />
+</LinearLayout>

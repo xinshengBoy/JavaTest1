@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Demo1</string>
+    <string name="ptr_pull_to_refresh">下拉刷新</string>
+    <string name="ptr_release_to_refresh">释放刷新</string>
+    <string name="ptr_refreshing">正在刷新...</string>
+    <string name="ptr_last_updated">最后更新: %1$s</string>
+    <!-- 上拉刷新 -->
+    <string name="pull_to_refresh">上拉刷新</string>
+	<string name="text_expand_text">经常在APP中能看到有引用文章或大段博文的内容，他们的展示样式也有点儿意思，默认是折叠的，当你点击文章之后它会自动展开。再次点击他又会缩回去。 
+　　网上有找到部分效果，感觉不是很满意。最后自己尝试用 自定义布局layout 写了个demo。比较简陋，不过可以用了。有这方面需求的朋友可以稍加改造下。如有更好的创意，也不妨分享一下。 </string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="border_top">Border Top</string>
+    <string name="border_bottom">Border Bottom</string>
+    <string name="image_url">Image Url</string>
+    <string name="meteriadialogContent">这是我近期整理的比较酷炫并且我们会经常用到的custom view，也有一些不是custom view，但是也是android UI相关的，实现了酷炫UI效果的开源库，合理利用这些开源库，可以让你的app提升一个档次！总结的项目最后维护时间一般不会超过6个月，会持续更新。博客可能不能实时同步，而且简书好像不支持图片尺寸参数，导致图片很大，影响阅读，所以欢迎来我的Github查看，如果觉的不错，欢迎star。其中大部分控件我也没有真正使用，只是感觉比较酷炫就收集过来了，所以如果描述有误的话，欢迎大家指正！</string>
+    <string name="app_id">590065d0</string>
+
+    <!--jazzView样式-->
+    <string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+
+    <!--radialbuttonlayout-->
+    <string name="radialHome">主页</string>
+    <string name="radialFind">发现</string>
+    <string name="radialChat">聊天</string>
+    <string name="radialFriend">朋友</string>
+    <string name="radialSetting">设置</string>
+    <string name="radialMenu">菜单</string>
+    <string name="radialOpen">Open</string>
+    <string name="radialClose">Close</string>
+</resources>
